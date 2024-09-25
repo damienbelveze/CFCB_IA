@@ -13,7 +13,7 @@ L'histoire des IA ne commence pas avec le lancement auprès du grand public du c
 ## proposer aux étudiants de se tester sur les différentes phases de l'IA
 
 
-<iframe width="1519" height="1127" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
+<iframe width="900" height="1127" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 
 (dispositif pédagogique : timeline IA ?)
