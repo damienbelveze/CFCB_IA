@@ -13,7 +13,7 @@ L'histoire des IA ne commence pas avec le lancement auprès du grand public du c
 ## proposer aux étudiants de se tester sur les différentes phases de l'IA
 
 
-<iframe width="900" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
+<iframe width="900" height="1000" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 :note: Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la [page correspondante](histoire_ia.html)
 
@@ -61,7 +61,7 @@ Les dates de la première colonne constituent les mots à déplacer. l'espace o�
 | 2012 | Suite à des plaintes, Facebook ferme son système de reconnaissance faciale qu'il avait ouvert l'année précédente [^6]|
 | 2016 | Des IA traitent des données provenant de réseaux sociaux pour influencer le vote des électeurs [^7] |
 | 2019 | Le Allen Institute fait paraître le premier article ("Green AI") qui mesure directement l'impact environnemental suscité par les IA [^5] 
-| 2023 | Llama 2 un modèle de langage aussi puissant que GPT est mis à la disposition des internautes par Facebook |
+| 2023 | Llama 2 un modèle de langage aussi puissant que GPT est mis à la disposition des internautes par Facebook [^8]|
 
 Cette série de dates a été sélectionnée à partir de deux sources : une activité de la Bataille de l'IA (association Latitudes), proposée aux futurs animateurs et de la [vidéo](https://youtu.be/qmwJx-r5vmw?si=6Ss2Ka3xD_EeuOZk) du CEA intégré dans le cours consacré par les bibliothécaires de Science Po Lyon à l'IA (@ceaHistoireSciencesLhistoire2018)  
 
@@ -91,4 +91,6 @@ Je souhaite que ca aille plus loin, et ça ira plus loin, car nous pouvons rédu
 
 [^6]: introduis les aspects éthiques de l'IA. L'IA capte les données personnelles, elle permet aussi dans bien des endroits de surveiller les salariés, voire des populations entières (cf. caméras à reconnaissance faciale installées dans certaines villes dont Paris depuis les Jeux Olympiques)
 
-[^7]: il s'agit évidemment de l'affaire Cambridge Analytica. Les IA peuvent être déployées pour influencer le vote des électeurs dans des campagnes de PsyOps. (voir [enjeux environnementaux](enjeux_ethiques_environnementaux.md)
+[^7]: il s'agit évidemment de l'affaire Cambridge Analytica. Les IA peuvent être déployées pour influencer le vote des électeurs dans des campagnes de PsyOps. (voir [enjeux environnementaux](enjeux_ethiques_environnementaux.md) )
+
+[^8]: interroger la notion d'ouverture en ce qui concerne les LLM : qu'est-ce que ça signifie en l'occurrence "ouvert" ?
