@@ -16,6 +16,13 @@
         h5pJsonPath: h5pJsonPath,
         frameJs: 'libs/h5p/frame.bundle.js',
         frameCss: 'libs/h5p/styles/h5p.css',
+        frame: true,
+            export: true,
+            icon: true,
+            downloadUrl: 'h5p/histoire_ia.h5p',
+            fullScreen: true, 
+            embed: true,
+            embedCode:'<iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
       }
       new H5PStandalone.H5P(h5pContainer, options);
     });
@@ -24,30 +31,27 @@
 <div>
     <p>
         prompt utilisé dans Poe (Claude-3.5-Sonnet)
-        <block>
+        <md-block>
             Voici un tableau avec une liste de dates et une liste d'événements. A partir de ces données, produis du texte qui intégré à H5P permette d'obtenir le résultat suivant :
+            une activité Drag the words pour H5P dans laquelle : les énoncés de la colonne événements sont proposés en ordre aléatoire, chacun sur une seule ligne.
+            Les dates de la première colonne constituent les mots à déplacer. l'espace où chaque date doit être placée suit la ligne relative à chaque événement
 
-une activité Drag the words pour H5P dans laquelle : les énoncés de la colonne événements sont proposés en ordre aléatoire, chacun sur une seule ligne.
+            | date | événement |
+            | :---: | :---:|
+            | 1965 | Hubert Dreyfus publie une critique de la notion d'IA en contestant le fait que l'intelligence ne soit réduite qu'à une simple fonction de calcul |
+            | 1966 | Eliza, le premier chatbot voit le jour |
+            | 2009 | Fei Fei Li initie ImageNet, l'une des plus grandes bases ouvertes d'images du web |
+            | 2011 | Siri, l'assistant vocal d'Apple débarque dans les maison |
+            | 1950 | Un test voit le jour pour déterminer si on a affaire à une machine ou à un humain |
+            | 1956 | Le terme d'"intelligence artificielle" fait son apparition à la conférence de Dartmouth College
+            | 1957 | Frank Rosenblatt invente à l'Université Cornell le premier algorithme d'apprentissage supervisé au moyen d'un réseau de neurones, le Perceptron[^1]
+            | 1997 | Deep Blue bat Kasparov aux échecs
+            | 2012 | Suite à des plaintes, Facebook ferme son système de reconnaissance faciale qu'il avait ouvert l'année précédente |
+            | 2016 | Des IA traitent des données provenant de réseaux sociaux pour influencer le vote des électeurs |
+            | 2019 | Le Allen Institute fait paraître le premier article ("Green AI") qui mesure directement l'impact environnemental suscité par les IA 
+            | 2023 | Llama 2 un modèle de langage aussi puissant que GPT est mis à la disposition des internautes par Facebook |
 
-Les dates de la première colonne constituent les mots à déplacer.
-
-l'espace où chaque date doit être placée suit la ligne relative à chaque événement
-
-Les bons appariements (bonnes réponses) sont présentés dans le tableau :
-date	événement
-1965	Hubert Dreyfus publie une critique de la notion d'IA en contestant le fait que l'intelligence ne soit réduite qu'à une simple fonction de calcul
-1966	Eliza, le premier chatbot voit le jour
-2009	Fei Fei Li initie ImageNet, l'une des plus grandes bases ouvertes d'images du web
-2011	Siri, l'assistant vocal d'Apple débarque dans les maison
-1950	Un test voit le jour pour déterminer si on a affaire à une machine ou à un humain
-1956	Le terme d'"intelligence artificielle" fait son apparition à la conférence de Dartmouth College
-1957	Frank Rosenblatt invente à l'Université Cornell le premier algorithme d'apprentissage supervisé au moyen d'un réseau de neurones, le Perceptron[^1]
-1997	Deep Blue bat Kasparov aux échecs
-2012	Suite à des plaintes, Facebook ferme son système de reconnaissance faciale qu'il avait ouvert l'année précédente
-2016	Des IA traitent des données provenant de réseaux sociaux pour influencer le vote des électeurs
-2019	Le Allen Institute fait paraître le premier article ("Green AI") qui mesure directement l'impact environnemental suscité par les IA
-2023	Llama 2 un modèle de langage aussi puissant que GPT est mis à la disposition des internautes par Facebook
-        </block>
+        </md-block>
     </p>
 </div>
 
