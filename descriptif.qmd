@@ -1,8 +1,8 @@
 ---
-title: descriptif formation Sygefor
-author: Damien Belvèze
-date: 24092024 
+title: Descriptif de la formation
+date: "25 septembre 2024"
 ---
+
 
 # Public ciblé
 

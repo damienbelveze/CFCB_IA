@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+.blockquote {
+    font-size: 32px;
+    margin-left: 100px;
+    font-style: italic;
+    color: #ee1a26;
+}
+
+.bottom {
+    position: absolute; 
+    bottom: 10px; 
+    width: 100%; 
+    text-align: center;
+}
+
+.h1 {
+    color: #ee1a26;
+}
+
+.quarto-title-block .quarto-title-banner {
+    background-image: url(images/etoile.png);
+    background-size: 150px;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-origin: content-box;
+  }

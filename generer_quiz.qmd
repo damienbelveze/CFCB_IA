@@ -1,4 +1,8 @@
 ---
+title: generer_quiz.md
+---
+
+---
 title: Exercice générer un quiz
 ---
 

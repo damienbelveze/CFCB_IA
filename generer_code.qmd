@@ -1,0 +1,15 @@
+---
+title: generer_code.md
+---
+
+<!-- une requête en SPARQL permet au stagiaire de vérifier dans le service de requête de Wikidata que le code constitué par l'IA  -->
+
+Les IAG sont fréquemment utilisées pour générer du code source. Elles ne sont pas toutes faites pour cela, et on peut mesurer de grandes différences en terme d'exactitude d'un résultat à un autre. Parfois le code livré fonctionne, parfois non. 
+Certains LLM entraînés spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen sont plus efficaces a priori. Mais tout dépend des corpus sur lesquels ces LLM ont été entraînés. Certains langages de programmation sont mieux représentés que d'autres dans ces corpus, tout simplement parce qu'ils sont plus populaires, c'est le cas par exemple de Python et Javascript. 
+
+Nous allons tenter de générer du code qui peut être utile à des fins de recherche et dont on pourra se rendre compte de l'efficacité sans avoir à télécharger quoique ce soit sur notre machine. 
+
+Ce code sera précisément une requête en SPARQL pour interroger les données de Wikidata. 
+
+SPARQL est le langage de requête qu'on utilise pour extraire de Wikidata des listes d'éléments que contient la base. Wikidata étant la liste d'ontologies sur laquelle repose Wikipédia. Ces éléments peuvent être de très diverses nature : des films, des papillons, des personnes célèbres, des maladies, etc.
+Le tout étant organisé sous la forme de triplets 
