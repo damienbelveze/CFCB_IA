@@ -1,0 +1,33 @@
+<div id="h5p-container-1"></div>
+<script>
+  (function() {
+    let h5pContainer = document.getElementById("h5p-container-1");
+    let h5pJsonPath = 'h5p/histoire_IA'; 
+
+    if (!document.getElementById('h5p-bundle-js')) {
+      let script = document.createElement('script');
+      script.id = 'h5p-bundle-js';
+      script.src = 'libs/h5p/main.bundle.js';
+      h5pContainer.parentNode.insertBefore(script, h5pContainer.nextSibling);
+    }
+
+    window.addEventListener("load", function() {
+      const options = {
+        h5pJsonPath: h5pJsonPath,
+        frameJs: 'libs/h5p/frame.bundle.js',
+        frameCss: 'libs/h5p/styles/h5p.css',
+        frame: true,
+            export: true,
+            icon: true,
+            downloadUrl: 'h5p/histoire_ia.h5p',
+            fullScreen: true, 
+            embed: true,
+            embedCode:'<iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_IA/histoire_ia.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
+      }
+      new H5PStandalone.H5P(h5pContainer, options);
+    });
+  }) ();
+</script>
+
+<a href="competences_informationnelles.html">Retour</a>
+

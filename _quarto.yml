@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Aider les étudiants à prendre du recul par rapport à leurs usages des outils d'IA"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Descriptif de la formation"
+      - href: definitions.qmd
+        text: Définitions
+      - href: descriptif.qmd
+        text: Programme
+      - href: about.qmd
+        text: à propos
+
+format:
+  html:
+    title-block-banner: "#ee1a26"
+    css: styles.css
+    toc: true

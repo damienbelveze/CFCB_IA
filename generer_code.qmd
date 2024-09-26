@@ -1,5 +1,5 @@
 ---
-title: generer_code.md
+title: "générer du code"
 ---
 
 <!-- une requête en SPARQL permet au stagiaire de vérifier dans le service de requête de Wikidata que le code constitué par l'IA  -->

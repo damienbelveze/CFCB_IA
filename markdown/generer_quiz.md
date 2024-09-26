@@ -1,7 +1,6 @@
 ---
-title: "générer des quiz"
+title: Exercice générer un quiz
 ---
-
 
 Le but de l'exercice va consister à générer un H5P à partir d'un texte.
 Pour être réalisé, l'exercice nécessite que le logiciel logiquiz soit téléchargé sur l'ordinateur. 

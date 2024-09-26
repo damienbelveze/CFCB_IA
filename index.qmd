@@ -1,5 +1,5 @@
 ---
-title: index.md
+title: "Présentation du cours"
 ---
 
 
