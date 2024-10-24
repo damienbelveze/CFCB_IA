@@ -19,3 +19,6 @@ format:
     title-block-banner: "#ee1a26"
     css: styles.css
     toc: true
+from: markdown+emoji
+bibliography: biblio.bib
+csl: apa.csl

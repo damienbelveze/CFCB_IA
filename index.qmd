@@ -1,49 +1,34 @@
 ---
-title: "Présentation du cours"
+title: "Déroulé"
 ---
 
 
-# Public ciblé
+# Activités matin
 
-Personnels de bibliothèque contribuant à la formation des publics
-Personnels spécialisés dans l'ingénierie pédagogique
+Recul critique vis à vis de l'IA : comment aborder la question avec les étudiants. 
+3 idées clé : 
 
-# Objectifs
+- 1. l'Histoire de l'IA est déjà longue avant la venue de ChatGPT
 
-- Se familiariser avec les outils d'intelligence artificielle générative (IAG)   utilisés par les étudiants et connaître d'autres outils plus spécialisés  
-- Appréhender les différentes manières dont les étudiants s'approprient ces outils dans leur travail quotidien  
-- Permettre aux étudiants d'aborder avec un esprit critique les productions d'une IAG  
-- Intégrer les IAG dans le socle de compétences informationnelles à transmettre aux étudiants  
+voir [Histoire de l'IA avant ChatGPT](histoire_ia.qmd)
+
+- 2. Le présent de l'IA ne se confond pas avec les IAG
+
+qu'est-ce qu'entraîner un modèle : exemple avec une IA de classification : pinceaux et stylos (voir [classification](classification/classification.qmd))
+
+- 3. ChatGPT n'est pas synonyme d'IAG. Chaque outil a ses propres spécificités, les outils ne sont pas interchangeables. La culture scientifique consiste à utiliser le bon outil pour la bonne tâche et à ne pas se focaliser sur un seul outil pour l'appliquer à tout. 
 
 
-# Compétences visées :
 
-- Comprendre le fonctionnement des IA génératives  
-- Utiliser les IAG pour faciliter la conception de supports pédagogiques  
-- Choisir l'outil le plus approprié pour la réalisation d'une tâche donnée  
-- Porter un discours éclairé et pondéré sur l'usage des IAG à l'Université auprès de la communauté étudiante et des enseignants  
 
-# Programme
 
-- Maîtriser les [concepts essentiels](concepts_essentiels.qmd) : LLM, RAG, fine-turning, tokens, entraînement, prompts, hallucinations, etc..  
-- Utiliser les IAG pour générer du [code](generer_code.qmd), des [quiz](generer_quiz.qmd), pour trouver des idées...  
-- Qualifier des usages d'étudiants et de professionnels en tant que risques ou opportunités  
-- Utiliser les IAG de façon responsable  
 
-# Méthodes pédagogiques
 
-- Usage d'outils destinés à faire de la pédagogie autour des IA  
-- Discussion collective (board) sur des cas d'usage des IAG par étudiants  
-- Elaboration collective (en sous-groupes avec mise en commun à la fin de la séance) d'activités destinées à insérer la maîtrise des IAG dans les compétences informationnelles et pour promouvoir l'esprit critique chez les étudiants vis-à-vis des productions réalisées au moyen d'IAG  
 
-# Pré-requis
 
-Un [questionnaire](questionnaire.md) à remplir sera transmis au préalable pour mieux percevoir les attentes des stagiaires
-Tarifs
+# Activités après-midi
 
-Convention université zone de compétence MCO : gratuit
-Hors convention université ou hors subvention DRAC - Formation d'une journée : 110€
+- [Générer des quiz](generer_quiz.qmd)
 
-# Précisions sur le lieu de formation
-Lieu de formation : (86) Université de Poitiers - MÉDIA CENTRE-OUEST
-Contact téléphonique : 05.49.45.33.73
+- [générer du code](generer_code.qmd)
+

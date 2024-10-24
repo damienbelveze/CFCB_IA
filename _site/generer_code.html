@@ -99,8 +99,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Descriptif de la formation</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./definitions.html"> 
+<span class="menu-text">Définitions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./descriptif.html"> 
+<span class="menu-text">Programme</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">contact</span></a>
+<span class="menu-text">à propos</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -129,8 +137,16 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#les-llm-spécialisés-dans-le-code" id="toc-les-llm-spécialisés-dans-le-code" class="nav-link active" data-scroll-target="#les-llm-spécialisés-dans-le-code">Les LLM spécialisés dans le code</a></li>
+  <li><a href="#a-propos-de-sparql" id="toc-a-propos-de-sparql" class="nav-link" data-scroll-target="#a-propos-de-sparql">A propos de Sparql</a></li>
+  <li><a href="#deux-façons-dutiliser-le-llm" id="toc-deux-façons-dutiliser-le-llm" class="nav-link" data-scroll-target="#deux-façons-dutiliser-le-llm">deux façons d’utiliser le LLM</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -139,13 +155,80 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="les-llm-spécialisés-dans-le-code" class="level1">
+<h1>Les LLM spécialisés dans le code</h1>
 <!-- une requête en SPARQL permet au stagiaire de vérifier dans le service de requête de Wikidata que le code constitué par l'IA  -->
 <p>Les IAG sont fréquemment utilisées pour générer du code source. Elles ne sont pas toutes faites pour cela, et on peut mesurer de grandes différences en terme d’exactitude d’un résultat à un autre. Parfois le code livré fonctionne, parfois non. Certains LLM entraînés spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen sont plus efficaces a priori. Mais tout dépend des corpus sur lesquels ces LLM ont été entraînés. Certains langages de programmation sont mieux représentés que d’autres dans ces corpus, tout simplement parce qu’ils sont plus populaires, c’est le cas par exemple de Python et Javascript.</p>
 <p>Nous allons tenter de générer du code qui peut être utile à des fins de recherche et dont on pourra se rendre compte de l’efficacité sans avoir à télécharger quoique ce soit sur notre machine.</p>
 <p>Ce code sera précisément une requête en SPARQL pour interroger les données de Wikidata.</p>
-<p>SPARQL est le langage de requête qu’on utilise pour extraire de Wikidata des listes d’éléments que contient la base. Wikidata étant la liste d’ontologies sur laquelle repose Wikipédia. Ces éléments peuvent être de très diverses nature : des films, des papillons, des personnes célèbres, des maladies, etc. Le tout étant organisé sous la forme de triplets</p>
+</section>
+<section id="a-propos-de-sparql" class="level1">
+<h1>A propos de Sparql</h1>
+<p>SPARQL est le langage de requête qu’on utilise pour extraire de Wikidata les listes d’éléments que contient la base. Wikidata étant la liste d’ontologies sur laquelle repose Wikipédia. Ces éléments peuvent être de très diverses nature : des films, des papillons, des personnes célèbres, des maladies, etc. Le tout étant organisé sous la forme de triplets par exemple :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">sujet (Q…)</th>
+<th style="text-align: center;">prédicat (P…)</th>
+<th style="text-align: center;">objet (Q…)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Paris (Q90)</td>
+<td style="text-align: center;">est une partie de (P361)</td>
+<td style="text-align: center;">l’ïle de France (Q13917)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Le Python vert (Q849394)</td>
+<td style="text-align: center;">a pour habitat (P2974)</td>
+<td style="text-align: center;">la forêt (Q4121)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Le moteur Diesel (Q174174)</td>
+<td style="text-align: center;">a été inventé (P1071)</td>
+<td style="text-align: center;">A Munich (Q1726)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="deux-façons-dutiliser-le-llm" class="level1">
+<h1>deux façons d’utiliser le LLM</h1>
+<ul>
+<li>directe :</li>
+</ul>
+<p>demander à l’IA de générer la liste de tous les téléscopes qui se trouvent sur le territoire français et qui sont présents dans Wikidata</p>
+<ul>
+<li>indirecte :</li>
+</ul>
+<p>copier-coller dans le prompt une requête SPARQL parmi les <a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples">exemples présents</a> sur cette liste et décrire ce que cela permet d’obtenir. Puis demander à avoir la liste de tous les téléscopes présents sur le territoire français</p>
+<p>Par exemple :</p>
+<pre class="text"><code>
+Voici une requête SPARQL qui permet d'obtenir tous les monts en italie dont l'altitude est supérieure à 4000 mètres : 
+
+SELECT ?item ?itemLabel ?coord ?elev ?picture
+{
+  ?item p:P2044/psn:P2044/wikibase:quantityAmount ?elev ; # normalized height
+        wdt:P625 ?coord ;
+        wdt:P17 wd:Q38 ;
+        wdt:P18 ?picture
+  FILTER(?elev &gt; 4000)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "it" }
+}
+
+Pourrais-tu générer une requête en SPARQL qui permet d'obtenir de Wikidata la liste par ordre alphabétique de nom des téléscopes qui se trouvent en France ?
+</code></pre>
+<p>Faire cette requête avec un LLM spécialisé dans le code, puis avec un LLM généraliste (par exemple GPT de ChatGPT). Vérifiez que les requêtes fonctionnent dans le service de requête de Wikidata, éventuellement, corrigez-les.</p>
+<p>Quel est votre avis sur les performances de ces IAG pour générer des requêtes SPARQL ?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
