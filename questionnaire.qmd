@@ -2,13 +2,6 @@
 title: questionnaire.md
 ---
 
----
-title: questionnaire formation IAG CFCB 
-subtitle: questionnaire réalisé pour Limesurvey
-author: Damien Belvèze
-date: 24092024
----
-
 # A propos de votre situation
 
 A1 Assurez-vous des formations dans votre établissement (oui / non)
