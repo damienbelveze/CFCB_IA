@@ -1,0 +1,12 @@
+---
+title: la question des biais
+---
+
+Qu'est-ce que c'est qu'un biais rapporté à une IA ? 
+
+Exemple Amélie Cordier : entraînement d'une IA classificatrice : commande, facture ; que ce se passe t-il si dans l'entreprise la plupart des commandes sont faites vers Amazon (parce que deux états de commande pour chaque item : commande + confirmation de commande. Surreprésentation d'Amazon dans les commandes, pousse l'IA à faire une mauvaise corrélation : commande = amazon / facture = pas Amazon. 
+biais lié à la surreprésentation d'un attribut dans un ensemble de données. 
+
+Cette surreprésentation provient d'un biais antérieur à l'IA et propre au jeu de données. 
+
+

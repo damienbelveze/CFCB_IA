@@ -138,5 +138,12 @@
     "title": "questionnaire.md",
     "section": "",
     "text": "A propos de votre situation\nA1 Assurez-vous des formations dans votre établissement (oui / non) A2 Votre établissement a t-il une politique (charte, communication orientée vers les étudiants ou personnels) au sujet des outils d’Intelligence Artificielle Générative (IAG) ? A3 Si oui (A2), pourriez-vous indiquer en quoi elle impacte votre travail en tant que personnel ou formateur/formatrice ?\n\n\nA propos de votre pratique des IAG\nB1 Avec quelle fréquence utilisez-vous des IAG (plusieurs fois par jour, plusieurs fois par semaine, quelques fois par mois, je n’ai pas d’usage établi de ces outils, je ne les ai jamais essayés)\nB2 Si B1 = usages fréquents (plusieurs fois par jour, plusieurs fois par semaine, quelques fois par mois) : Vous aidez-vous d’IAG pour créer vos supports de cours ? (oui souvent, oui parfois, oui rarement, jamais)\nB3 Si B1 = usages fréquents (plusieurs fois par jour, plusieurs fois par semaine, quelques fois par mois) : vous aidez-vous d’IAG à des fins d’exécuter d’autres tâches professionnelles ?\n\n\nA propos de vos connaissances des IAG\nIndiquez sur quels sujets il vous manque de l’information pour être à l’aise avec les étudiants lorsuqe vous parlez d’IAG (de 1 à 5)\n\nLarge Modèles de Langage (LLM)\nvectorisation, tokenisation\nentraînement, inférences\nRAG (retrieve Augmented Generation tool)\nFine-Tuning\nmodèle probabiliste, hallucination\ncapacités matérielles, GPU"
+  },
+  {
+    "objectID": "IAG_biais.html",
+    "href": "IAG_biais.html",
+    "title": "la question des biais",
+    "section": "",
+    "text": "Qu’est-ce que c’est qu’un biais rapporté à une IA ?\nExemple Amélie Cordier : entraînement d’une IA classificatrice : commande, facture ; que ce se passe t-il si dans l’entreprise la plupart des commandes sont faites vers Amazon (parce que deux états de commande pour chaque item : commande + confirmation de commande. Surreprésentation d’Amazon dans les commandes, pousse l’IA à faire une mauvaise corrélation : commande = amazon / facture = pas Amazon. biais lié à la surreprésentation d’un attribut dans un ensemble de données.\nCette surreprésentation provient d’un biais antérieur à l’IA et propre au jeu de données."
   }
 ]
