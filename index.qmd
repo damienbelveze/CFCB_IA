@@ -16,7 +16,9 @@ voir [Histoire de l'IA avant ChatGPT](histoire_ia.qmd)
 
 qu'est-ce qu'entraîner un modèle : exemple avec une IA de classification : pinceaux et stylos (voir [classification](classification/classification.qmd))
 
-- 3. ChatGPT n'est pas synonyme d'IAG. Chaque outil a ses propres spécificités, les outils ne sont pas interchangeables. La culture scientifique consiste à utiliser le bon outil pour la bonne tâche et à ne pas se focaliser sur un seul outil pour l'appliquer à tout. 
+- 3. ChatGPT n'est pas synonyme d'IAG. Chaque outil a ses propres spécificités, les outils ne sont pas interchangeables. La culture scientifique consiste à utiliser le bon outil pour la bonne tâche et à ne pas se focaliser sur un seul outil pour l'appliquer à tout. Parler d'IAG, c'est reparler de culture numérique et poser le problème. Si les étudiants ou les chercheurs utilisent les IAG de façon inappropriée, c'est d'abord par manque de culture numérique. 
+
+Louis Derrac : parler d'IAG donne le prétexte aux formateurices de faire de la culture numérique avec leurs étudiants.
 
 
 

@@ -1,0 +1,60 @@
+:: Passage 1 : L'entrée du château 
+Vous poussez la grande porte en bois et entrez dans le château hanté. Vous entendez des bruits étranges venant de l'intérieur. [[Passage 2 : La salle d'entrée]] ou [[Passage 3 : Les escaliers]] 
+
+:: Passage 2 : La salle d'entrée 
+Vous vous retrouvez dans une grande salle avec un plafond haut et des murs en pierre. Il y a une porte à gauche qui semble donner sur une galerie [[Passage 5 : La galerie]] et une autre à droite qui mène à une coursiève [[Passage 4 : La coursiève]] 
+
+:: Passage 3 : Les escaliers 
+Vous montez les escaliers en colimaçon qui vous mènent à une tour [[Passage 6 : La tour]]. Vous entendez des voix fantomatiques venant de l'étage supérieur. 
+
+:: Passage 4 : La coursiève 
+Vous marchez le long d'une étroite coursive qui surplombe la cour intérieure du château. Vous apercevez un Elfe qui vous regarde depuis une fenêtre [[Passage 7 : L'Elfe]]. 
+
+:: Passage 5 : La galerie 
+Vous marchez dans une longue galerie avec des portraits de personnages sinistres. Vous trouvez une porte dérobée qui mène à une salle secrète [[Passage 8 : La salle secrète]]. 
+
+:: Passage 6 : La tour 
+Vous atteignez le sommet de la tour et découvrez un vampire qui vous regarde avec des yeux rouges. Il vous propose un marché [[Passage 9 : Le marché du vampire]]. Vous pouvez aussi essayer de l'attaquer [[Passage 10 : L'attaque contre le vampire]]. 
+
+:: Passage 7 : L'Elfe 
+L'Elfe vous parle d'une ancienne prophétie qui concerne votre venue au château. Il vous donne un indice pour trouver la sortie [[Passage 11 : La recherche de la sortie]]. Vous pouvez aussi lui demander de l'aide pour affronter le vampire. 
+
+:: Passage 8 : La salle secrète 
+Vous découvrez une salle remplie de trésors et d'objets étranges. Vous trouvez un livre qui parle des pièges du château [[Passage 12 : Les pièges du château]]. Vous pouvez aussi prendre l'un des objets pour vous aider dans votre quête. 
+
+:: Passage 9 : Le marché du vampire 
+Le vampire vous propose de lui donner quelque chose en échange de la liberté. Vous pouvez accepter son offre [[Passage 13 : L'acceptation]] ou refuser et essayer de l'attaquer. 
+
+:: Passage 10 : L'attaque contre le vampire 
+Vous attaquez le vampire avec votre épée, mais il est très puissant et vous contre-attaque. Vous devez fuir [[Passage 14 : La fuite]]. 
+
+:: Passage 11 : La recherche de la sortie 
+Vous cherchez la sortie du château en suivant les indices donnés par l'Elfe. Vous trouvez une porte qui semble mener à l'extérieur [[Passage 15 : La porte de sortie]]. Mais attention, il y a un piège ! 
+
+:: Passage 12 : Les pièges du château 
+Vous lisez le livre et découvrez que le château est rempli de pièges mortels. Vous pouvez essayer d'éviter les pièges [[Passage 16 : L'évitement des pièges]] ou prendre un objet pour vous protéger. 
+
+:: Passage 13 : L'acceptation 
+Vous acceptez l'offre du vampire et lui donnez ce qu'il demande. Il vous libère, mais vous réalisez que c'était une erreur [[Passage 17 : Le regret]]. Vous pouvez essayer de revenir sur vos pas. 
+
+:: Passage 14 : La fuite 
+Vous fuyez le vampire en courant dans les couloirs du château. Vous trouvez une porte qui mène aux oubliettes [[Passage 18 : Les oubliettes]]. Mais attention, il y a des fantômes ! 
+
+:: Passage 15 : La porte de sortie 
+Vous atteignez la porte de sortie, mais elle est verrouillée par un piège. Vous devez trouver une façon de l'ouvrir [[Passage 19 : L'ouverture du piège]]. Sinon, vous serez prisonnier à vie ! 
+
+:: Passage 16 : L'évitement des pièges 
+Vous évitez les pièges avec succès et atteignez la porte de sortie. Mais il y a un dernier piège à éviter [[Passage 20 : Le dernier piège]]. 
+
+:: Passage 17 : Le regret 
+Vous regrettez votre décision d'accepter l'offre du vampire. Vous pouvez essayer de revenir sur vos pas et tuer le vampire [[Passage 10 : L'attaque contre le vampire]]. Sinon, vous serez à jamais prisonnier du château. 
+
+:: Passage 18 : Les oubliettes 
+Vous descendez aux oubliettes et découvrez un monde souterrain sinistre. Vous trouvez une porte qui mène à la surface [[Passage 11 : La recherche de la sortie]]. Mais attention, il y a des créatures dangereuses ! 
+
+:: Passage 19 : L'ouverture du piège 
+Vous ouvrez le piège et atteignez enfin la liberté. Vous pouvez sortir du château et fuir dans la forêt [[Passage 20 : La fuite finale]]. Mais attention, il y a des dangers qui vous attendent à l'extérieur ! 
+
+:: Passage 20 : Le dernier piège 
+Vous évitez le dernier piège et atteignez enfin la sortie. Vous pouvez sortir du château et fuir dans la forêt [[Passage 19 : L'ouverture du piège]]. Félicitations, vous avez survécu au château hanté ! 
+  

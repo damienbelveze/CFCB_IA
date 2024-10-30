@@ -1,0 +1,52 @@
+[
+  {
+    "date": 1965,
+    "info": "Hubert Dreyfus conteste la notion d'intelligence artificielle",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Hubert_Lederer_Dreyfus%2C_August%2C_1976.jpg/330px-Hubert_Lederer_Dreyfus%2C_August%2C_1976.jpg"
+  },
+  {
+    "date": 1966,
+    "info": "Eliza, le premier chatbot voit le jour",
+    "img": "http://blog.optbot.com.br/wp-content/uploads/2023/12/Example-of-ELIZA-ELIZA-a-chatbot-was-designed-by-Joseph-Weizenbaum-to-imitate-a.jpg"
+  },
+  {
+    "date": 2022,
+    "info": "ChatGPT est disponible pour tous les internautes",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/langfr-800px-ChatGPT-Logo.svg.png"
+  },
+  {
+    "date": 2009,
+    "info": "Fei Fei Li initie ImageNet, l'une des plus grandes bases ouvertes d'images du web",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg/390px-Fei-Fei_Li_at_AI_for_Good_2017.jpg"
+  },
+  {
+    "date": 1950,
+    "info": "Un test voit le jour pour déterminer si on a affaire à une machine ou à un humain",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Turing_test_diagram.png/330px-Turing_test_diagram.png"
+  },
+  {
+    "date": 1956,
+    "info": "Le terme d'intelligence artificielle fait son apparition à la conférence de Dartmouth",
+    "img": "https://upload.wikimedia.org/wikipedia/en/b/b5/Dartmouth-Moscow_2008.jpg"
+  },
+  {
+    "date": 1957,
+    "info": "Frank Rosenblatt invente le Perceptron à l'Université Cornell",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Perceptron.svg/501px-Perceptron.svg.png"
+  },
+  {
+    "date": 1997,
+    "info": "Deep blue bat Kasparov aux échecs",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Deep_Blue.jpg/330px-Deep_Blue.jpg"
+  },
+  {
+    "date": 2016,
+    "info": "Des IA traitent des données provenant de réseaux sociaux pour influencer le vote des électeurs",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Cambridge-analytica.png"
+  },
+  {
+    "date": 2012,
+    "info": "Le Allen Institute fait paraître le premier article (Green AI) qui mesure directement l'impact environnemental des IA",
+    "img": "https://sloanreview.mit.edu/wp-content/uploads/2024/06/Winston-AI-Sustainability-1290x860-1.jpg"
+  }
+]
