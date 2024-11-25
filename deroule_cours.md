@@ -108,71 +108,80 @@ A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 
 
 Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées du Supérieur) (Massias, 2024)
 
-- usage régulier : 92%  
-- usage quotidien : 30%  
-- **usage d'outils payants (GPT4) : 30%**  
+        - usage régulier : 92%  
+        - usage quotidien : 30%  
+        - **usage d'outils payants (GPT4) : 30%**  
 
                 {{1}}
 
-- 52% constatent que ChatGPT les influence dans leurs choix  
-- 66% des répondants sont sensibles au fait que ChatGPT charrie des références culturelles et des biais nord-américains  
-- 59% constatent que ChatGPT fait des erreurs  
+        - 52% constatent que ChatGPT les influence dans leurs choix  
+        - 66% des répondants sont sensibles au fait que ChatGPT charrie des références culturelles et des biais nord-américains  
+        - 59% constatent que ChatGPT fait des erreurs  
 
-- 65% estiment que le fait que l'employeur mette à disposition des IAG aux employés fait partie de leurs critères de choix pour leur futur emploi 
+        - 65% estiment que le fait que l'employeur mette à disposition des IAG aux employés fait partie de leurs critères de choix pour leur futur emploi 
 
                 {{2}}
 
-- 49% des étudiants considèrent que les IAG peuvent constituer un risque pour la démocratie
+        - 49% des étudiants considèrent que les IAG peuvent constituer un risque pour la démocratie
 
-- <div class="blue">51% des étudiants admettent qu'ils ont du mal à se passer de ChatGPT</div>
+        - <div class="blue">51% des étudiants admettent qu'ils ont du mal à se passer de ChatGPT</div>
 
                 {{3}}
 
-L'échantillon n'est peut-être pas représentatif : certaines disciplines, une certaine aisance des étudiants qui ont pu faire le choix d'écoles privées coûteuses.
+        L'échantillon n'est peut-être pas représentatif : certaines disciplines, une certaine aisance des étudiants qui ont pu faire le choix d'écoles privées coûteuses.
 
 </div>
 
 ### Enquête Gresec
 
-Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble (Ma, 2024)
+<div class="prez">
 
                 {{0}}
+
+Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble (Ma, 2024)
+
+
+                {{1}}
+
+usage selon l'avancée dans les études
 
 | Fréquentation | premier cycle | deuxième cycle |
 |:--:|:--:|:--:|
 |presque jamais | 48% | 35%  |
 | au moins la moitié des travaux |  17%  |  33%  |
 
-                {{1}}
-
-Intensité des usages dans les travaux fournis par disciplines
-
-![](images/zhuoran2.png)
 
                 {{2}}
 
-Arguments apportés par les non utilisateurs : 
+Intensité des usages dans les travaux fournis par disciplines
+![](images/zhuoran2.png)
 
-- 63% préoccupations éthiques "ne veut pas tricher"
-- 52% faible confiance dans les résultats
-- 20% difficulté à maîtriser les outils
-- 16% interdiction explicite de l'enseignant.e ou de l'établissement
-
-Utilisation écrasante des générateurs de textes et parmi ceux-ci de ChatGPT
 
                 {{3}}
 
-Principaux usages et bénéfices rapportés : 
+Arguments apportés par les non utilisateurs : <br>
+- 63% préoccupations éthiques "ne veut pas tricher" <br> 
+- 52% faible confiance dans les résultats  <br>
+- 20% difficulté à maîtriser les outils  <br>
+- 16% interdiction explicite de l'enseignant.e ou de l'établissement <br> 
 
-- aide à écrire du code informatique
-- pour les non-francophones, améliorer le français, aide à rédiger en anglais
-- permet de mieux comprendre un sujet
-- permet de trouver de l'inspiration sur un thème particulier
+Utilisation écrasante des générateurs de textes et parmi ceux-ci de ChatGPT
+
 
                 {{4}}
 
+Principaux usages et bénéfices rapportés : <br>
+- Aide à écrire du code informatique  <br>
+- Pour les non-francophones, améliorer le français, aide à rédiger en anglais  <br>
+- Permet de mieux comprendre un sujet <br>  
+- Permet de trouver de l'inspiration sur un thème particulier <br>  
+
+           
+                 {{5}}
+
 ![](images/zhuoran1.png)
 
+</div>
 
 # 2. replacer les IAG dans l'histoire de l'IA
 
@@ -234,10 +243,6 @@ Le fait d'associer deux tokens en fonction d'un contexte est ce qu'on appelle la
 
 ## 3.2 vectorisation
 
-u
-
-
-
 
 Lancer un prompt (garder Mixtral, le LLM par défaut sur Vittascience).
 Compter le nombre de tokens obtenu. Relancer la génération à partir d'un
@@ -281,9 +286,6 @@ dans ce cas :
 
 -   Mistral en tant que concepteur du LLM Mixtral avec lequel j'ai généré le prompt ?
 
-
-## 3.2 Vectorisation
-
 Un LLM est une "calculette de mots" qui fonctionne sur la base de
 rapprochements statistiques entre des mots qui se retrouvent dans des
 contextes identiques. Cela implique que tous les [tokens](#jetons)
@@ -322,6 +324,7 @@ de -La-"/></p>
 
 # 5. approches pédagogiques
 
+<iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 # 6. Enjeux environnementaux et sociaux
 
