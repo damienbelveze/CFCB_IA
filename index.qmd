@@ -3,7 +3,7 @@ title: "Déroulé"
 ---
 
 
-# Activités matin
+# Activités matin : être à l'aise avec les concepts relatifs aux IAG
 
 Recul critique vis à vis de l'IA : comment aborder la question avec les étudiants. 
 3 idées clé : 
@@ -28,7 +28,12 @@ Louis Derrac : parler d'IAG donne le prétexte aux formateurices de faire de la 
 
 
 
-# Activités après-midi
+# Activités après-midi : faire des activités basées sur les IAG avec des étudiants
+
+## human made / IA made
+
+
+
 
 - [Générer des quiz](generer_quiz.qmd)
 
