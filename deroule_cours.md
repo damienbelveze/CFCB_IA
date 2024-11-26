@@ -147,6 +147,7 @@ Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc d
 	author = {Ma, Zhuoran},
 	month = sep,
 	year = {2024},
+        url = {https://docsoc2024.sciencesconf.org/}
 }
 ```
 
