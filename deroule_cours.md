@@ -14,6 +14,13 @@ link: lia.css
 
 comment: ce support s'adresse à des personnels de bibliothèque, formateurs et professionnels de la documentation. 
 
+import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
+
+@onload
+// this shall load an entire file at starttime that can be referenced
+setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/LiaTemplates/citations/main/bibtex.bib")}, 100)
+@end
+
 -->
 
 
