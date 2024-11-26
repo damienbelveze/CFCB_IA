@@ -323,7 +323,9 @@ Pour passer d'un mot à un autre, le LLM est formé à faire des substitutions :
 royauté + homme = roi 
 roi - homme + femme = reine
 
-![](images/vectors)
+                                {{2}}
+
+![](images/vectors.png)
 
 ```bibtex @cite
 @misc{metzgerWhatAreTokens2022,
@@ -481,3 +483,4 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 # Bibliographie
 
+@[bibliography.link.style(vancouver)](./biblio.bib)
