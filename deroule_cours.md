@@ -120,9 +120,9 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
   type = {Cette {\'E}tude Est Tir{\'e}e Du Sondage R{\'e}alis{\'e} Lors Du Hackathon Transversal 2024 << {{L}}'intelligence Artificielle, Les {{IA}} G{\'e}n{\'e}ratives et Leurs Enjeux Soci{\'e}taux >>. {{Elle}} s'inscrit Dans La Dynamique Du Projet de Recherche {{Hyp{\'e}rion}} Initi{\'e} Par Le {{P{\^o}le L{\'e}onard}} de {{Vinci}}, {{RM}} Conseil et Le Groupe {{Talan}}.},
   title = {{\'E}tude 2024 : {{L}}'{{Impact}} Des {{IA}} G{\'e}n{\'e}ratives Sur Les {\'E}tudiants},
   author = {Massias, Joachim},
-  year = {2024}
+  year = {2024},
+  url = {https://open.devinci.fr/ressource/etude-2024-impact-ia-generatives-etudiants/}
 }
-
 ```
 
         - usage régulier : 92%  
