@@ -116,12 +116,12 @@ A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 
 Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées du Supérieur)
 
 ```bibtex @cite
-@techreport{massiasEtude2024LImpact2024,
-  type = {Cette {\'E}tude Est Tir{\'e}e Du Sondage R{\'e}alis{\'e} Lors Du Hackathon Transversal 2024 << {{L}}'intelligence Artificielle, Les {{IA}} G{\'e}n{\'e}ratives et Leurs Enjeux Soci{\'e}taux >>. {{Elle}} s'inscrit Dans La Dynamique Du Projet de Recherche {{Hyp{\'e}rion}} Initi{\'e} Par Le {{P{\^o}le L{\'e}onard}} de {{Vinci}}, {{RM}} Conseil et Le Groupe {{Talan}}.},
-  title = {{\'E}tude 2024 : {{L}}'{{Impact}} Des {{IA}} G{\'e}n{\'e}ratives Sur Les {\'E}tudiants},
-  author = {Massias, Joachim},
-  year = {2024},
-  url = {https://open.devinci.fr/ressource/etude-2024-impact-ia-generatives-etudiants/}
+@book{massiasEtude2024LImpact2024,
+        type = {Cette {\'E}tude Est Tir{\'e}e Du Sondage R{\'e}alis{\'e} Lors Du Hackathon Transversal 2024 << {{L}}'intelligence Artificielle, Les {{IA}} G{\'e}n{\'e}ratives et Leurs Enjeux Soci{\'e}taux >>. {{Elle}} s'inscrit Dans La Dynamique Du Projet de Recherche {{Hyp{\'e}rion}} Initi{\'e} Par Le {{P{\^o}le L{\'e}onard}} de {{Vinci}}, {{RM}} Conseil et Le Groupe {{Talan}}.},
+        title = {{\'E}tude 2024 : {{L}}'{{Impact}} Des {{IA}} G{\'e}n{\'e}ratives Sur Les {\'E}tudiants},
+        author = {Massias, Joachim},
+        year = {2024},
+        url = {https://open.devinci.fr/ressource/etude-2024-impact-ia-generatives-etudiants/}
 }
 ```
 
@@ -212,7 +212,11 @@ Principaux usages et bénéfices rapportés : <br>
 
 </div>
 
-# 2. replacer les IAG dans l'histoire de l'IA
+### conséquences sur les enseignements 
+
+![](images/memoires.png)
+
+# 2. replacer les IAG dans l'Histoire de l'IA et dans le paysage de la Culture Numérique 
 
 une histoire ancienne mais non linéaire de l'intelligence artificielle
 
@@ -239,10 +243,35 @@ Si une activité ne fonctionne pas, vous pouvez tenter l'autre
 
 Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="activite_histoire_ia.html" target="_blank">page correspondante au quiz</a>)
 
+## 2.2 IAG : le nouveau couteau suisse ? 
 
-# 3. Maîtriser quelques concepts essentienls de l'IA avec Vittascience
+>avec un moteur à explosion, on peut faire des voitures (le moteur sert à faire tourner des roues) ou des tronçonneuses. Mais il n’est pas recommandé d’essayer de rentrer chez soi en utilisant une tronçonneuse. Mieux vaudrait utiliser une voiture. Or l’approche d’openIA – et des utilisateurs – semble consister à adopter la tronçonneuse pour faire aussi l’office de voiture: on ajoute des pneus autour de la chaîne, on construit des routes qui s’adaptent à des tronçonneuses
 
-Aller sur Vittascience
+```bibtex @cite
+@article{vitali-rosatiChatGPTTronconneuse2024,
+  title = {{{ChatGPT}} et La Tron{\c c}onneuse},
+  author = {{Vitali-Rosati}, Marcello},
+  year = {2024},
+  month = sep,
+  journal = {Culture num{\'e}rique. Pour une philosophie du num{\'e}rique},
+  urldate = {2024-09-24},
+  abstract = {Blogue de Marcello Vitali-Rosati},
+  howpublished = {http://blog.sens-public.org/marcellovitalirosati/chatgpttronconneuse.html},
+  langid = {english},
+  keywords = {IA}
+}
+```
+
+```txt Question
+
+Un étudiant entre des liens dans ChatGPT et demande au chatbot de lui restituer 
+des références dans le style biblio de Nature. Que lui conseillez-vous ?
+
+```
+
+# 3. Maîtriser quelques concepts essentiels de l'IA avec Vittascience
+
+Les activités suivantes seront proposées à partir du [site Vittascience](https://fr.vittascience.com/ia/)
 
 
 ## 3.1 tokenisation
@@ -270,13 +299,47 @@ ainsi *bon* constituera un token, la terminaison de cet adjectif au féminin (-
 
 Le fait d'associer deux tokens en fonction d'un contexte est ce qu'on appelle la vectorisation. 
 
+```txt Activité
+
+Avec combien de tokens, le chatbot répond t-il à la question "qui a tué le roi Henri IV" ?
+
+```
+
 ## 3.2 vectorisation
 
+                                {{0}}
 
-Lancer un prompt (garder Mixtral, le LLM par défaut sur Vittascience).
-Compter le nombre de tokens obtenu. Relancer la génération à partir d'un
-token qui se termine en milieu de mot et relancer la génération du
-prompt à partir d'une proposition statistiquement moins élevée.
+numériser le langage, ce n'est pas seulement numériser des mots, c'est aussi numériser le rapport qu'entretiennent ces mots dans un corpus de documents donné. 
+Les mots transformés en vecteurs sont plus ou moins proches les uns des autres sous un certain rapport. 
+
+Par exemple, le mot Apple est proche de Windows sous le rapport de l'informatique
+le mot Apple est proche de banana sous le rapport de la nourriture
+les mots Windows et banana sont distants l'un de l'autre dans un grand nombre de rapports. 
+
+                                {{1}}
+
+Pour passer d'un mot à un autre, le LLM est formé à faire des substitutions : 
+
+royauté + homme = roi 
+roi - homme + femme = reine
+
+![](images/vectors)
+
+```bibtex @cite
+@misc{metzgerWhatAreTokens2022,
+        title = {What Are {{Tokens}}, {{Vectors}}, and {{Embeddings}} \& {{How}} Do You Create Them?},
+        author = {Metzger, Sascha},
+        year = {2022},
+        month = dec,
+        journal = {Medium},
+        urldate = {2024-11-24},
+        abstract = {Understand the core concepts of each NLP project.},
+        langid = {english},
+        url = {https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037}
+}
+
+```
+
 
 ## 3.3 Température
 
@@ -288,6 +351,13 @@ Vittascience, les jetons les plus déterministes sont en vert foncé).
 Plus cet aléatoire est grand et plus le résultat sera éloigné de ce
 déterminisme. On aura des textes plus "créatifs" souvent illisibles
 quand la température est poussée à son maximum.
+
+```txt Question
+
+Dans le chatbot que vous utilisez, savez-vous si vous pouvez changer la température ? 
+et si oui, comment ?
+
+``` 
 
 ### Activité 
 
