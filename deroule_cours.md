@@ -141,7 +141,7 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
 Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble.
 
 ```bibtex @cite
-@inproceedings{maLintegrationOutilsDintelligence2024,
+@book{maLintegrationOutilsDintelligence2024,
 	address = {Genève},
 	title = {L’intégration des outils d’intelligence artificielle dans la production académique étudiante : dynamiques, perspectives et enjeux},
 	author = {Ma, Zhuoran},
