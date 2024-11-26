@@ -138,7 +138,18 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
 
                 {{0}}
 
-Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble (Ma, 2024)
+Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble.
+
+```bibtex @cite
+@inproceedings{maLintegrationOutilsDintelligence2024,
+	address = {Genève},
+	title = {L’intégration des outils d’intelligence artificielle dans la production académique étudiante : dynamiques, perspectives et enjeux},
+	author = {Ma, Zhuoran},
+	month = sep,
+	year = {2024},
+}
+```
+
 
 
                 {{1}}
@@ -324,7 +335,28 @@ de -La-"/></p>
 
 # 5. approches pédagogiques
 
+## Testez, discutez, commentez, améliorez les propositions d'activités suivantes :
+
+critères : 
+
+- l'activité permet-elle d'atteindre l'objectif pédagogique ?
+- l'activité sera t-elle encore efficace dans quelques mois ?
+- l'activité est t-elle simple à mettre en place ? 
+- les outils choisis pour l'activité sont-ils simples à utiliser ? 
+- les outils choisis pour l'activité sont-ils représentatifs ? 
+- les contenus choisis sont-ils intéressants, pertinents ?  
+- l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ?
+
+reconnaissance d'images générées par IA (ou pas)
+
 <iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
+
+Mesure des biais dans la génération d'images 
+
+
+Demander à l'IA d'écrire une histoire pour Twine 
+
+
 
 # 6. Enjeux environnementaux et sociaux
 
@@ -333,6 +365,23 @@ Si l'entraînement d'une IA est une opération très énergivore et très émett
 L'activité suivante a pour objet de faire prendre conscience de certains ordres de grandeur en matière de consommation d'énergie et en fonction des types d'intelligence artificielle.
 
 [ordres de grandeur dans la consommation](https://damienbelveze.github.io/ai_environnement/ai_consommation.html)
+
+
+# 7 Quel positionnement pour les bibliothécaires / formateurs ?
+
+êtes-vous d'accord avec ces principes : 
+
+- les IAG sont capables d'hallucination, autant que possible on doit inciter à utiliser des outils sur lesquels on a le contrôle
+
+- Le pire à propos des IAG, serait de ne rien faire et de continuer comme si ça n'existait pas
+
+- On ne devrait pas permettre à un étudiant de faire avec une IAG quelque chose qu'il n'a pas encore appris à faire sans. 
+
+- Les établissements devraient payer des licences aux versions payantes des IAG afin de mettre tous les étudiants sur un pied d'égalité
+
+- La venue des IAG grand public est pour nous une motivation supplémentaire pour développer nos activités dans deux sens : la culture numérique et l'EMI
+
+
 
 # 7. crédits logiciels
 
