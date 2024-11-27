@@ -361,7 +361,7 @@ La “température” utilisée dans une softmax me semble être une excellente 
 @misc{vitali-rosatiCreativiteLLM2024,
         type = {Blog de Marcello Vitali-Rosati},
         title = {La Créativité Des LLM},
-        author = {{Vitali-Rosati}, Marcello},
+        author = {Vitali-Rosati, Marcello},
         year = {2024},
         month = nov,
         journal = {Culture numérique. Pour une philosophie du numérique},
