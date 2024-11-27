@@ -251,10 +251,10 @@ Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="
 ```bibtex @cite
 @article{vitali-rosatiChatGPTTronconneuse2024,
   title = {{{ChatGPT}} et La Tron{\c c}onneuse},
-  author = {{Vitali-Rosati}, Marcello},
+  author = {Vitali-Rosati, Marcello},
   year = {2024},
   month = sep,
-  journal = {Culture num{\'e}rique. Pour une philosophie du num{\'e}rique},
+  journal = {Culture numérique. Pour une philosophie du numérique},
   urldate = {2024-09-24},
   abstract = {Blogue de Marcello Vitali-Rosati},
   howpublished = {http://blog.sens-public.org/marcellovitalirosati/chatgpttronconneuse.html},
