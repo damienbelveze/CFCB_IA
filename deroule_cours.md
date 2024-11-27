@@ -250,7 +250,7 @@ Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="
 
 ```bibtex @cite
 @article{vitali-rosatiChatGPTTronconneuse2024,
-  title = {{{ChatGPT}} et La Tron{\c c}onneuse},
+  title = {ChatGPT et La Tronçonneuse},
   author = {Vitali-Rosati, Marcello},
   year = {2024},
   month = sep,
