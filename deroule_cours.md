@@ -27,9 +27,11 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 
 # 1. Bienvenue
 
-<img src="images/jorgi.jpg" alt="jorgi, un personnage de Papers, please" width="40%">
+<img src="images/jorgi.jpg" alt="jorgi, un personnage de Papers, please" width="100px">
 
+<div class="prez">
 Damien belvèze, Service Commun de Documentation, Université de Rennes
+</div>
 
 ## 1.1 Présentation du formateur
 
@@ -269,12 +271,14 @@ des références dans le style biblio de Nature. Que lui conseillez-vous ?
 
 ```
 
-# 3. Maîtriser quelques concepts essentiels de l'IA avec Vittascience
+# 3 Maîtriser quelques concepts essentiels de l'IA avec Vittascience
 
 Les activités suivantes seront proposées à partir du [site Vittascience](https://fr.vittascience.com/ia/)
 
 
 ## 3.1 tokenisation
+
+                                {{0}}
 
 La tokenisation consiste à débiter une phrase en unités de sens. 
 
@@ -293,7 +297,9 @@ Pour autant "de bonne heure" est constitué de deux termes qui peuvent être uti
 
 par conséquent si le corpus contient plusieurs textes, on a tout intérêt à faire de ces mots des tokens. 
 
-La numérisation du texte passe par les tokens. Si dans un corpus volumineux, tous les mots font l'objet de token, cette numérisation va prendre un temps considérable. Il convient donc de réduire le nombre de tokens pour faciliter ces calculs. Pour réduire les tokens, les systèmes vont assez souvent repérer les termes les plus utilisés, leur attribuer un token en particulier et conserver ce token dans des mots qui les contient. 
+                                {{1}}
+
+La numérisation du texte passe par les tokens, mais pas seulement. Si dans un corpus volumineux, tous les mots font l'objet de token, cette numérisation va prendre un temps considérable. Il convient donc de réduire le nombre de tokens pour faciliter ces calculs. Pour réduire les tokens, les systèmes vont assez souvent repérer les termes les plus utilisés, leur attribuer un token en particulier et conserver ce token dans des mots qui les contient. 
 
 ainsi *bon* constituera un token, la terminaison de cet adjectif au féminin (-ne) un autre token. Cet autre token pourra aussi être attribué au terme *patron* -> | patron | ne |
 
@@ -345,37 +351,54 @@ roi - homme + femme = reine
 
 ## 3.3 Température
 
-Part d'aléatoire plus ou moins grande et souvent paramétrable pour
-l'usager dans la succession des tokens. Plus l'aléatoire (température)
-est faible et plus la suite de caractères est déterministe et s'éloigne
+> Pour le cas de l’originalité: il est complètement débile de se demander si chatGPT, ou une autre application basée sur un LLM, est ou pas “créatif” ou “original”. Il faut d’abord se demander “qu’est-ce que j’entends exactement par “originalité”?” Si la réponse est bien formalisée, elle pourra être implémentée dans une approche algorithmique. 
+La “température” utilisée dans une softmax me semble être une excellente définition d’originalité. Je ne dis pas que c’est la seule possible, loin de là, mais c’est une “bonne” définition, car elle est claire et non ambigüe.
+
+```bibtex @cite
+@misc{vitali-rosatiCreativiteLLM2024,
+        type = {Blog de {{Marcello Vitali-Rosati}}},
+        title = {La Cr{\'e}ativit{\'e} Des {{LLM}}},
+        author = {{Vitali-Rosati}, Marcello},
+        year = {2024},
+        month = nov,
+        journal = {Culture num{\'e}rique. Pour une philosophie du num{\'e}rique},
+        urldate = {2024-11-27},
+        abstract = {Blogue de Marcello Vitali-Rosati},
+        langid = {english},
+        file = {/home/dbelveze/Zotero/storage/HGXFXP44/creativitellm.html}
+}
+```
+
+*Softmax* = algorithme permettant d'introduire une part d'aléatoire plus ou moins grande et souvent paramétrable pour l'usager dans la succession des tokens. Plus l'aléatoire est faible et plus la suite de caractères est déterministe et s'éloigne
 très peu des cas majoritaires dans les données d'entraînement. (Dans
 Vittascience, les jetons les plus déterministes sont en vert foncé).
 Plus cet aléatoire est grand et plus le résultat sera éloigné de ce
 déterminisme. On aura des textes plus "créatifs" souvent illisibles
 quand la température est poussée à son maximum.
 
-```txt Question
+```text Question
 
 Dans le chatbot que vous utilisez, savez-vous si vous pouvez changer la température ? 
 et si oui, comment ?
 
 ``` 
 
-### Activité 
+<p><img src="images/haikus.png" class="img-fluid figure-img" /></p>
+<figcaption>haikus réalisés par Mixtral</figcaption>
+
+```text Activité
 
 Dans Vittascience, faire un haïku sur un sujet de votre choix (par
 exemple la pluie en Bretagne) avec une température faible (20%) et
 envoyez la même instruction avec une température élevée (75%) ; comparez
 les résultats. Lequel préférez-vous ?
 
-<p><img src="images/haikus.png" class="img-fluid figure-img" /></p>
-<figcaption>haikus réalisés par Mixtral</figcaption>
-
-
 Les token verts manifestent les probabilités les plus hautes, les tokens
 rouges, les probabilités les plus basses (le vert clair et le rose
 correspondent à des valeurs médianes entre ces deux extrêmes). Plus la
 température est haute, plus le rose et le rouge abondent.
+
+```
 
 Question : si je souhaite publier ces haïkus, est-ce que je peux le
 faire et toucher des droits d'auteur sur ma publication ? Qui est auteur
@@ -418,6 +441,29 @@ ou un *L'*
 
 <p><img src="images/mistral3.png" class="img-fluid figure-img" alt="en jaune, le tokenID de *, en orange, le tokeID
 de -La-"/></p>
+
+## 3.4 Renforcement
+
+cf. question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves : 
+
+> Qu'adviendra t-il si nous répondons mal à des requêtes comme "amour" et "ouragan"  
+
+> Qu'advient-il lorsque ChatGPT répond à une personne qui lui soumet ses symptomes que sa meilleure option est de se suicider ?
+
+```bibtex @cite
+@book{ertzscheidIALassautCyberespace2024,
+        title = {Les {{IA}} à l'assaut Du Cyberespace},
+        author = {Ertzscheid, Olivier},
+        date = {2024-06-09},
+        edition = {Édition standard},
+        publisher = {C\&F éditions},
+        location = {Caen},
+        abstract = {« Le projet des grands capitaines d’industrie de la Tech, de Zuckerberg à Musk, n’est plus de permettre à l’humanité de se parler ni même de dialoguer avec des robots, mais de permettre à des robots de nous indiquer quoi faire, que dire et où regarder. » À l’heure de ChatGPT, la langue elle-même est devenue une production industrielle, accompagnant l’émergence d’un capitalisme linguistique. Olivier Ertzscheid part des usages de ce qu’on appelle abusivement « intelligence artificielle » pour en démonter les mécanismes. Il s’agit avant tout d’artefacts remplaçant le sens par la statistique, industrialisant la production documentaire et développant un Web synthétique. Sommes-nous à l’aube d’une nouvelle « lutte de classes linguistique » ?},
+        isbn = {978-2-37662-085-3},
+        pagetotal = {142},
+        url = {https://cfeditions.com/ia-cyberespace/}
+}
+```
 
 # 4. Comparer les modèles de langage entre eux
 
