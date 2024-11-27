@@ -119,8 +119,7 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
 
 ```bibtex @cite
 @book{massiasEtude2024LImpact2024,
-        type = {Cette {\'E}tude Est Tir{\'e}e Du Sondage R{\'e}alis{\'e} Lors Du Hackathon Transversal 2024 << {{L}}'intelligence Artificielle, Les {{IA}} G{\'e}n{\'e}ratives et Leurs Enjeux Soci{\'e}taux >>. {{Elle}} s'inscrit Dans La Dynamique Du Projet de Recherche {{Hyp{\'e}rion}} Initi{\'e} Par Le {{P{\^o}le L{\'e}onard}} de {{Vinci}}, {{RM}} Conseil et Le Groupe {{Talan}}.},
-        title = {{\'E}tude 2024 : {{L}}'{{Impact}} Des {{IA}} G{\'e}n{\'e}ratives Sur Les {\'E}tudiants},
+        title = {Etude 2024 : L'Impact Des IA Génératives Sur Les Etudiants},
         author = {Massias, Joachim},
         year = {2024},
         url = {https://open.devinci.fr/ressource/etude-2024-impact-ia-generatives-etudiants/}
@@ -273,10 +272,14 @@ des références dans le style biblio de Nature. Que lui conseillez-vous ?
 
 # 3 Maîtriser quelques concepts essentiels de l'IA avec Vittascience
 
+                                {{0}}
 Les activités suivantes seront proposées à partir du [site Vittascience](https://fr.vittascience.com/ia/)
 
+![](images/vittascience.png)
 
-## 3.1 tokenisation
+
+## 3.1 Tokenisation  
+
 
                                 {{0}}
 
@@ -311,7 +314,7 @@ Avec combien de tokens, le chatbot répond t-il à la question "qui a tué le ro
 
 ```
 
-## 3.2 vectorisation
+## 3.2 vectorisation  
 
                                 {{0}}
 
@@ -335,7 +338,7 @@ roi - homme + femme = reine
 
 ```bibtex @cite
 @misc{metzgerWhatAreTokens2022,
-        title = {What Are {{Tokens}}, {{Vectors}}, and {{Embeddings}} \& {{How}} Do You Create Them?},
+        title = {What Are Tokens, Vectors, and Embeddings \& How Do You Create Them?},
         author = {Metzger, Sascha},
         year = {2022},
         month = dec,
@@ -349,23 +352,24 @@ roi - homme + femme = reine
 ```
 
 
-## 3.3 Température
+## 3.3 Température  
 
 > Pour le cas de l’originalité: il est complètement débile de se demander si chatGPT, ou une autre application basée sur un LLM, est ou pas “créatif” ou “original”. Il faut d’abord se demander “qu’est-ce que j’entends exactement par “originalité”?” Si la réponse est bien formalisée, elle pourra être implémentée dans une approche algorithmique. 
 La “température” utilisée dans une softmax me semble être une excellente définition d’originalité. Je ne dis pas que c’est la seule possible, loin de là, mais c’est une “bonne” définition, car elle est claire et non ambigüe.
 
 ```bibtex @cite
 @misc{vitali-rosatiCreativiteLLM2024,
-        type = {Blog de {{Marcello Vitali-Rosati}}},
-        title = {La Cr{\'e}ativit{\'e} Des {{LLM}}},
+        type = {Blog de Marcello Vitali-Rosati},
+        title = {La Créativité Des LLM},
         author = {{Vitali-Rosati}, Marcello},
         year = {2024},
         month = nov,
-        journal = {Culture num{\'e}rique. Pour une philosophie du num{\'e}rique},
+        journal = {Culture numérique. Pour une philosophie du numérique},
         urldate = {2024-11-27},
         abstract = {Blogue de Marcello Vitali-Rosati},
         langid = {english},
-        file = {/home/dbelveze/Zotero/storage/HGXFXP44/creativitellm.html}
+        file = {/home/dbelveze/Zotero/storage/HGXFXP44/creativitellm.html},
+        url = {http://blog.sens-public.org/marcellovitalirosati/creativitellm.html}
 }
 ```
 
@@ -442,7 +446,7 @@ ou un *L'*
 <p><img src="images/mistral3.png" class="img-fluid figure-img" alt="en jaune, le tokenID de *, en orange, le tokeID
 de -La-"/></p>
 
-## 3.4 Renforcement
+## 3.4 Renforcement  
 
 cf. question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves : 
 
@@ -452,7 +456,7 @@ cf. question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves 
 
 ```bibtex @cite
 @book{ertzscheidIALassautCyberespace2024,
-        title = {Les {{IA}} à l'assaut Du Cyberespace},
+        title = {Les IA à l'assaut Du Cyberespace},
         author = {Ertzscheid, Olivier},
         date = {2024-06-09},
         edition = {Édition standard},
