@@ -1,4 +1,9 @@
 /*-- scss:defaults --*/
+
+.body {
+    font-size: 15;
+}
+
 .blockquote {
     font-size: 32px;
     margin-left: 100px;

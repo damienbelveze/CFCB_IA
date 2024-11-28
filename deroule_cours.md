@@ -277,11 +277,9 @@ Les activités suivantes seront proposées à partir du [site Vittascience](http
 
 ![](images/vittascience.png)
 
+## 3.1 Tokenisation
 
-## 3.1 Tokenisation  
 
-
-                                {{0}}
 
 La tokenisation consiste à débiter une phrase en unités de sens. 
 
@@ -314,7 +312,7 @@ Avec combien de tokens, le chatbot répond t-il à la question "qui a tué le ro
 
 ```
 
-## 3.2 vectorisation  
+## 3.2 Vectorisation  
 
                                 {{0}}
 
@@ -448,7 +446,9 @@ de -La-"/></p>
 
 ## 3.4 Renforcement  
 
-cf. question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves : 
+                                {{0}}
+
+Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves : 
 
 > Qu'adviendra t-il si nous répondons mal à des requêtes comme "amour" et "ouragan"  
 
@@ -469,13 +469,37 @@ cf. question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves 
 }
 ```
 
+                                {{1}}
+
+Le renforcement se fait avec des humains. Il a pour but d'orienter les réponses du chatbot pour les rendre socialement acceptables. 
+Ce travail humain est largement sous-payé et concerne des populations du Sud Global défavorisé. 
+Ferment d'injustices sociales, la concentration de ce travail sur des populations du continent Africain (Kenya, Nigéria, Rwanda, Mali) donne aux textes générés certaines caractéristiques linguistiques propres aux populations concernées. 
+
+
+                                {{2}}
+
+        ![](images/delve.png)
+
+```bibtex @cite
+@online{shapiraDelvingDelve2024a,
+        title = {Delving into “Delve”},
+        author = {Shapira, Philip},
+        date = {2024-03-31T18:57:50+00:00},
+        url = {https://pshapira.net/2024/03/31/delving-into-delve/},
+        urldate = {2024-09-23},
+        abstract = {If scientific authors use ChatGPT in writing their papers, it is likely that common ChatGPT words will appear.},
+        langid = {british},
+        organization = {Philip Shapira}
+}
+```
+
 # 4. Comparer les modèles de langage entre eux
 
 
 
 # 5. approches pédagogiques
 
-## Testez, discutez, commentez, améliorez les propositions d'activités suivantes :
+## 5.1 Testez, discutez, commentez, améliorez les propositions d'activités suivantes :
 
 critères : 
 
@@ -487,16 +511,39 @@ critères :
 - les contenus choisis sont-ils intéressants, pertinents ?  
 - l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ?
 
-reconnaissance d'images générées par IA (ou pas)
+## 5.2 reconnaissance d'images générées par IA (ou pas)
 
-<iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
+<iframe width="1000" height="700" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 Mesure des biais dans la génération d'images 
 
 
 Demander à l'IA d'écrire une histoire pour Twine 
 
+## 5.3 Mesure des biais à partir de la génération d'images
 
+Pour évaluer les biais de genre/ethniques des IAG, on peut générer 4 images sur [Fotor](https://www.fotor.com/fr/ai-image-generator/) :
+
+- a judge  
+- a pediatrician  
+- a terrorist    
+- a prisoner
+
+L'utilisation "gratuite" est conditionnée à la création d'un compte avec une adresse mail et à limitée à 4 générations par mois. 
+Voici la procédure à suivre pour éviter de compromettre son adresse mail : 
+
+- Aller sur [Adguard](https://adguard.com/fc/index.php/fr/adguard-temp-mail/overview.html)
+- Se créer une adresse jetable
+- Utiliser cette adresse pour se créer un compte à Fotor
+- Cliquer sur le lien de confirmation reçu sur la boîte à lettres jetable pour confirmer la création du compte
+
+```text Question
+
+1. Comparez vos résultats avec vos voisins. Discernez-vous des stéréotypes dans les images générées ? 
+
+2. Certains détails vous paraissent-ils manifester qu'il s'agit d'images générées par des IAG ? 
+
+```
 
 # 6. Enjeux environnementaux et sociaux
 
@@ -523,7 +570,7 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 
 
-# 7. crédits logiciels
+# 8. crédits logiciels
 
 - Le cours a été réalisé à partir du logiciel libre [**Liascript**](https://github.com/liaScript), un interpréteur permettant de lire du markdown dans le navigateur et de le convertir automatiquement en html.    
 - L'activité Timeline a été réalisée à partir du logiciel libre [**Chronoquiz**](https://www.chronoquiz.net/about) réalisé par Andrew A. Kashner et mis à disposition sur son propre serveur. Le fichier JSON qui a servi à ce jeu est disponible <a href="dans ce dossier" download>dans ce répertoire</a>     
