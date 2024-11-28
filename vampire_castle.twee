@@ -1,13 +1,22 @@
-:: Passage 1 : L'entrée du château 
-Vous poussez la grande porte en bois et entrez dans le château hanté. Vous entendez des bruits étranges venant de l'intérieur. [[Passage 2 : La salle d'entrée]] ou [[Passage 3 : Les escaliers]] 
+:: StoryTitle
+Le château du vampire
+
+
+:: StoryData
+{
+  "start": "Start"
+}
+
+:: Start 
+Vous être à l'entrée du château. Vous poussez la grande porte en bois et entrez dans le château hanté. Vous entendez des bruits étranges venant de l'intérieur. [[Passage 2 : La salle d'entrée]] ou [[Passage 3 : Les escaliers]] 
 
 :: Passage 2 : La salle d'entrée 
-Vous vous retrouvez dans une grande salle avec un plafond haut et des murs en pierre. Il y a une porte à gauche qui semble donner sur une galerie [[Passage 5 : La galerie]] et une autre à droite qui mène à une coursiève [[Passage 4 : La coursiève]] 
+Vous vous retrouvez dans une grande salle avec un plafond haut et des murs en pierre. Il y a une porte à gauche qui semble donner sur une galerie [[Passage 5 : La galerie]] et une autre à droite qui mène à une coursive [[Passage 4 : La coursive]] 
 
 :: Passage 3 : Les escaliers 
 Vous montez les escaliers en colimaçon qui vous mènent à une tour [[Passage 6 : La tour]]. Vous entendez des voix fantomatiques venant de l'étage supérieur. 
 
-:: Passage 4 : La coursiève 
+:: Passage 4 : La coursive 
 Vous marchez le long d'une étroite coursive qui surplombe la cour intérieure du château. Vous apercevez un Elfe qui vous regarde depuis une fenêtre [[Passage 7 : L'Elfe]]. 
 
 :: Passage 5 : La galerie 

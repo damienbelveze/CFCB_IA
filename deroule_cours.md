@@ -544,6 +544,94 @@ Voici la procédure à suivre pour éviter de compromettre son adresse mail :
 2. Certains détails vous paraissent-ils manifester qu'il s'agit d'images générées par des IAG ? 
 
 ```
+## 5.4 créer un quiz avec logiquiz
+
+                                {{0}}
+
+![](images/data_good_ai.png)
+
+Le but de l'exercice va consister à générer un H5P à partir d'un texte.
+
+                                {{1}}
+
+Pour être réalisé, l'exercice nécessite que le logiciel logiquiz soit
+téléchargé sur l'ordinateur.
+Si ce n'est pas le cas, vous pouvez le télécharger sur Windows en suivant les instructions suivantes : 
+
+
+1.  Aller sur [le site de la
+    Digitale](https://ladigitale.dev/logiquiz/#telecharger)
+2.  télécharger l'archive zip sur le Bureau de votre ordinateur
+3.  Dézippez l'archive (clic droit sur l'archive \> extraire les
+    fichiers)
+4.  Pour exécuter le logiciel, suivez le chemin suivant dans
+    l'arborescence : logiquiz-1.0.9éwindows \> Logiquiz \> logiquiz.exe
+5.  Si le logiciel vous demande de modifier le parefeu, cliquer sur
+    "annuler"
+
+Vous êtes normalement en mesure à présent d'éditer des activités H5P.
+
+                                {{2}}
+
+On va donc créer une série de questions à choix multiple à partir d'un
+[article sur l'impact environnemental des IA](data_for_good_environnement.pdf)
+
+Vous pouvez faire l'exercice en utilisant Chat GP ou [Poe et le modèle
+Claude 3.5 Sonnet](https://poe.com) ou bien, si vous avez accès à l'outil, avec RAGaRenn (choisissez le modèle qui vous semble le plus adapté)
+
+Encore une fois, ces outils d'IA ne sont pas précisément faits pour mettre au point des quiz, mais on peut toujours les utiliser à cette fin, même si les résultats
+obtenus ne seront sans doute pas de qualité professionnelle : à vous
+d'apporter votre savoir-faire pédagogique.
+
+Dans l'interface du chatbot que vous avez choisi d'utiliser, utilisez le signe "+" pour charger le document et faire en sorte qu'il soit traité par le chatbot en même temps que votre prompt.
+
+**Astuce pour RAGaRenn** : le document a déjà été chargé dans le RAG, si vous avez du mal à le faire lire et traiter par le chatbot, entrer un # puis taper 'collection' et sélectionnez le fichier de l'exercice.
+
+![](images/RAGaRenn_environnement.png)
+
+Vous devez obtenir au choix :
+
+un résumé de 10 lignes sous forme de texte à trous. une série de 3
+questions à choix multiples comportant chacune 4 options.
+
+Etes-vous satisfait.e de ce que vous avez obtenu ?
+
+Si non, proposez une autre QCM. Si oui, demandez à Poe / ChatGPT / RAGaRenn ou
+autre... de formater le texte pour qu'il puisse être utilisé directement
+dans Logiquiz.
+
+
+
+
+
+![](images/logiquiz2.png)
+
+                                        {{3}}
+
+```text Formatage Logiquiz
+
+1. Dans Logiquiz, sélectionner l'activité "Question Set". 
+2. Entrez un titre (peu importe lequel)
+3. Ouvrez le menu "texte"
+4. Inspirez-vous de la syntaxe utilisée par le mode texte de h5p pour formater votre prompt : 
+
+        what number is pi?
+        *3.14:::Archimedes was the first to use an algorithm in order to approximate the value of pi
+        9.82:pi is the equivalent of 22/7
+        5.45:::5.45 is too big
+        6.56
+
+- passer une ligne entre chaque question
+- chaque bonne réponse est précédée d'une étoile
+- une aide est précédé de :
+- un feedback est précédé de ::: 
+(demandez au chatbot s'il peut générer des aides et des feedbacks pour chaque question.)
+
+Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
+
+```
+Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.github.io/IA_H5P/test.html)
+
 
 # 6. Enjeux environnementaux et sociaux
 
@@ -575,6 +663,7 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 - Le cours a été réalisé à partir du logiciel libre [**Liascript**](https://github.com/liaScript), un interpréteur permettant de lire du markdown dans le navigateur et de le convertir automatiquement en html.    
 - L'activité Timeline a été réalisée à partir du logiciel libre [**Chronoquiz**](https://www.chronoquiz.net/about) réalisé par Andrew A. Kashner et mis à disposition sur son propre serveur. Le fichier JSON qui a servi à ce jeu est disponible <a href="dans ce dossier" download>dans ce répertoire</a>     
 - Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse".
+- les jeux de carte ont été conçus avec le logiciel libre Inkscape et des icones obtenues sur le site du Nounproject
 
 
 
