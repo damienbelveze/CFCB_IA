@@ -4,7 +4,7 @@
 	<script>
 	  (function() {
 		let h5pContainer = document.getElementById("ai_consommation"); // div tag ID
-		let h5pJsonPath = 'H5P/ai_consommation'; // H5P data directory path
+		let h5pJsonPath = 'h5p/ai_consommation'; // H5P data directory path
 		
 		if (!document.getElementById('h5p-bundle-js')) {
 		  let script = document.createElement('script');
@@ -21,10 +21,10 @@
 			frame: true,
         	export: true,
         	icon: true,
-        	downloadUrl: 'H5P/ai_consommation.h5p',
+        	downloadUrl: 'h5p/ai_consommation.h5p',
         	fullScreen: true, 
         	embed: true,
-        	embedCode:'<iframe width=":w" height=":h" src="https://damienbelveze.github.io/jeu de cartes/ai_environnement.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
+        	embedCode:'<iframe width=":w" height=":h" src="https://damienbelveze.github.io/CFCB_AI/ai_environnement.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>',
 		  	}
 		  new H5PStandalone.H5P(h5pContainer, options);
 		});
