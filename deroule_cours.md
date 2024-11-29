@@ -446,6 +446,7 @@ de -La-"/></p>
 
 ## 3.4 Renforcement  
 
+
                                 {{0}}
 
 Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves : 
@@ -453,7 +454,6 @@ Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves :
 > Qu'adviendra t-il si nous répondons mal à des requêtes comme "amour" et "ouragan"  
 
 > Qu'advient-il lorsque ChatGPT répond à une personne qui lui soumet ses symptomes que sa meilleure option est de se suicider ?
-
 ```bibtex @cite
 @book{ertzscheidIALassautCyberespace2024,
         title = {Les IA à l'assaut Du Cyberespace},
@@ -469,17 +469,55 @@ Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves :
 }
 ```
 
+
                                 {{1}}
 
-Le renforcement se fait avec des humains. Il a pour but d'orienter les réponses du chatbot pour les rendre socialement acceptables. 
+        Le renforcement se fait avec des humains. Il a pour but d'orienter les réponses du chatbot pour les rendre socialement acceptables et de supprimer autant que possible les réponses inacceptables (cf. ci-dessus) 
+        Une autre visée de ce travail est d'essayer de corriger les biais qui sont présents soit dans le corpus de données d'entraînement (par exemples échanges sur un réseau social), soit dans les règles ou le code qui permet d'entraîner l'IA à partir de ce corpus. Ces règles en effet émanent d'une population assez homogène qui a ses propres biais (ingénieurs mâles, blancs, issus de classes sociales favorisées (classe managériale) et du continent Nord-Américain). 
+```bibtex @cite
+@misc{latitudesPourIAMoins2024,
+  title = {Pour Une IA Moins Biaisée},
+  author = {Latitudes},
+  date = {2024},
+  url = {https://latitudes.notion.site/Module-3-Pour-une-IA-g-n-rative-moins-biais-e-Recommand-en-Semaine-2-bca1427bb08944d68c3fae215952956c},
+  keywords = {biais,IA,Latitudes}
+}
+```
+
+
+                               {{2}}
+Cette correction se fait sur la base de la discrimination positive, en injectant de manière artificielle dans certains prompts des termes comme "blach" ou "female". On peut parfois s'apercevoir de ces tentatives avec des prompts orientés : 
+Voici ce que Dall-E générait en juillet 2022 avec le prompt "une personne portant un t-shirt sur lequel il y a écrit"
+        ![](images/debiaiser_IA.png) 
+
+        
+                                {{3}}  
+En dépit de cette méthode et d'autres plus sophistiquées et moins rudimentaires, les chatbots héritent en grande partie des discours dominants et des stéréotypes racistes, sexistes, validistes ou classistes qui sont ceux ! <br>
+        - 1. des discussions ordinaires que nous avons avec nos proches et servent de corpus de données   <br>
+        - 2. des biais qui sont propres à leurs concepteurs (et plus rarement conceptrices) 
+
+
+                                {{4}}
 Ce travail humain est largement sous-payé et concerne des populations du Sud Global défavorisé. 
 Ferment d'injustices sociales, la concentration de ce travail sur des populations du continent Africain (Kenya, Nigéria, Rwanda, Mali) donne aux textes générés certaines caractéristiques linguistiques propres aux populations concernées. 
+```bibtex @cite
+@online{perrigoExclusive$2Hour2023,
+        title = {Exclusive: The 2 dollars Per Hour Workers Who Made ChatGPT Safer},
+        shorttitle = {Exclusive},
+        author = {Perrigo, Billy},
+        date = {2023-01-18T12:00:58},
+        url = {https://time.com/6247678/openai-chatgpt-kenya-workers/},
+        urldate = {2024-11-18},
+        abstract = {A TIME investigation reveals the difficult conditions faced by the workers who made ChatGPT possible},
+        langid = {english},
+        organization = {TIME},
+        file = {/home/dbelveze/Zotero/storage/PTVCAG7N/openai-chatgpt-kenya-workers.html}
+}
 
+```
 
-                                {{2}}
-
+                                {{5}}
         ![](images/delve.png)
-
 ```bibtex @cite
 @online{shapiraDelvingDelve2024a,
         title = {Delving into “Delve”},
@@ -495,9 +533,67 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 
 # 4. Comparer les modèles de langage entre eux
 
+                                {{1}}
+Le Ministère de la Culture met à disposition ComparIA pour se familiariser avec différents modèles de langage, leur impact énergétique et leurs performances différentes. 
+Le principe d'usage est simple : 
+- vous sélectionnez un type de prompt parmi ceux proposés  
+- vous rédigez votre prompt et vous avez deux résultats provenant de deux LLM anonymes  
+- Vous indiquez quel est le meilleur résultat et au moment où vous le souhaitez vous levez l'anonymat de ces LLM  
+En même temps que le nom de chaque LLM vous avez son statut (propriétaire, / open source), son poids (en nombre de milliards de paramètres), quelques caractéristiques propres à sa création (par exemple modèle microsoft adapté à la langue française) et surtout sa consommation énergétique (en équivalent de temps de CO2 et de temps d'ampoule allumée).
 
+                                {{2}}
+    ![](images/comparIA.png)            
+
+
+                                {{3}}
+- ça permet derrière un même chatbot de montrer la pluralité des modèles de langage existants  
+- ça permet de comprendre les spécificités de ces modèles de langage  
+- ça permet de mesurer l'impact écologique de l'IA (manquent toutefois la consommation en eau, en terres rares et un aperçu de l'extraction minière que le façonnage de ce type de modèle induit pour avoir une vision complète de l'empreinte écologique)  
 
 # 5. approches pédagogiques
+
+
+
+![](images/logiquiz2.png)
+Utilisez un chatbot pour lui demander de faire un QCM sur un sujet de votre choix. Faites en sorte que sa réponse prenne la forme suivante de sorte qu'on n'ait plus qu'à la coller dans l'activité Question Set de Logiquiz.
+
+                                {{1}}
+Pour être réalisé, l'exercice nécessite  donc que le logiciel logiquiz soit
+téléchargé sur l'ordinateur.
+Si ce n'est pas le cas, vous pouvez le télécharger sur Windows en suivant les instructions suivantes : 
+1.  Aller sur [le site de la Digitale](https://ladigitale.dev/logiquiz/#telecharger  )
+2.  télécharger l'archive zip sur le Bureau de votre ordinateur  
+3.  Dézippez l'archive (clic droit sur l'archive \> extraire les fichiers)  
+4.  Pour exécuter le logiciel, suivez le chemin suivant dans l'arborescence : logiquiz-1.0.9_windows \> Logiquiz \> logiquiz.exe  
+5.  Si le logiciel vous demande de modifier le parefeu, cliquer sur "annuler" 
+<br>
+Vous êtes normalement en mesure à présent d'éditer des activités H5P.
+
+                                {{2}}
+Suivez à présent les instructions de formatage ci-dessous :
+```text Formatage Logiquiz
+
+1. Dans Logiquiz, sélectionner l'activité "Question Set". 
+2. Entrez un titre (peu importe lequel)
+3. Ouvrez le menu "texte"
+4. Inspirez-vous de la syntaxe utilisée par le mode texte de h5p pour formater votre prompt : 
+
+        what number is pi?
+        *3.14:::Archimedes was the first to use an algorithm in order to approximate the value of pi
+        9.82:pi is the equivalent of 22/7
+        5.45:::5.45 is too big
+        6.56
+
+- passer une ligne entre chaque question
+- chaque bonne réponse est précédée d'une étoile
+- une aide est précédé de :
+- un feedback est précédé de ::: 
+(demandez au chatbot s'il peut générer des aides et des feedbacks pour chaque question.)
+
+Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
+
+```
+
 
 ## 5.1 Testez, discutez, commentez, améliorez les propositions d'activités suivantes :
 
@@ -518,7 +614,7 @@ critères :
 Mesure des biais dans la génération d'images 
 
 
-Demander à l'IA d'écrire une histoire pour Twine 
+
 
 ## 5.3 Mesure des biais à partir de la génération d'images
 
@@ -544,58 +640,31 @@ Voici la procédure à suivre pour éviter de compromettre son adresse mail :
 2. Certains détails vous paraissent-ils manifester qu'il s'agit d'images générées par des IAG ? 
 
 ```
-## 5.4 créer un quiz avec logiquiz
+## 5.4 créer un quiz à partir d'un texte long
 
                                 {{0}}
-
 ![](images/data_good_ai.png)
-
-Le but de l'exercice va consister à générer un H5P à partir d'un texte.
-
-                                {{1}}
-
-Pour être réalisé, l'exercice nécessite que le logiciel logiquiz soit
-téléchargé sur l'ordinateur.
-Si ce n'est pas le cas, vous pouvez le télécharger sur Windows en suivant les instructions suivantes : 
-
-
-1.  Aller sur [le site de la
-    Digitale](https://ladigitale.dev/logiquiz/#telecharger)
-2.  télécharger l'archive zip sur le Bureau de votre ordinateur
-3.  Dézippez l'archive (clic droit sur l'archive \> extraire les
-    fichiers)
-4.  Pour exécuter le logiciel, suivez le chemin suivant dans
-    l'arborescence : logiquiz-1.0.9éwindows \> Logiquiz \> logiquiz.exe
-5.  Si le logiciel vous demande de modifier le parefeu, cliquer sur
-    "annuler"
-
-Vous êtes normalement en mesure à présent d'éditer des activités H5P.
-
-                                {{2}}
-
-On va donc créer une série de questions à choix multiple à partir d'un
-[article sur l'impact environnemental des IA](data_for_good_environnement.pdf)
-
+Le but de l'exercice va consister à générer un H5P à partir d'un texte en reprenant la méthode apprise ci-dessus. 
+On va  créer une série de questions à choix multiple à partir d'un [article sur l'impact environnemental des IA](data_for_good_environnement.pdf)
+<br>
 Vous pouvez faire l'exercice en utilisant Chat GP ou [Poe et le modèle
 Claude 3.5 Sonnet](https://poe.com) ou bien, si vous avez accès à l'outil, avec RAGaRenn (choisissez le modèle qui vous semble le plus adapté)
-
+<br>
 Encore une fois, ces outils d'IA ne sont pas précisément faits pour mettre au point des quiz, mais on peut toujours les utiliser à cette fin, même si les résultats
 obtenus ne seront sans doute pas de qualité professionnelle : à vous
 d'apporter votre savoir-faire pédagogique.
 
+                                {{1}}
+
 Dans l'interface du chatbot que vous avez choisi d'utiliser, utilisez le signe "+" pour charger le document et faire en sorte qu'il soit traité par le chatbot en même temps que votre prompt.
-
 **Astuce pour RAGaRenn** : le document a déjà été chargé dans le RAG, si vous avez du mal à le faire lire et traiter par le chatbot, entrer un # puis taper 'collection' et sélectionnez le fichier de l'exercice.
-
 ![](images/RAGaRenn_environnement.png)
 
-Vous devez obtenir au choix :
+                                {{2}}
 
-un résumé de 10 lignes sous forme de texte à trous. une série de 3
-questions à choix multiples comportant chacune 4 options.
-
+Vous devez obtenir :
+un résumé de 10 lignes sous forme de texte à trous. une série de 3 questions à choix multiples comportant chacune 4 options.
 Etes-vous satisfait.e de ce que vous avez obtenu ?
-
 Si non, proposez une autre QCM. Si oui, demandez à Poe / ChatGPT / RAGaRenn ou
 autre... de formater le texte pour qu'il puisse être utilisé directement
 dans Logiquiz.
@@ -604,32 +673,7 @@ dans Logiquiz.
 
 
 
-![](images/logiquiz2.png)
 
-                                        {{3}}
-
-```text Formatage Logiquiz
-
-1. Dans Logiquiz, sélectionner l'activité "Question Set". 
-2. Entrez un titre (peu importe lequel)
-3. Ouvrez le menu "texte"
-4. Inspirez-vous de la syntaxe utilisée par le mode texte de h5p pour formater votre prompt : 
-
-        what number is pi?
-        *3.14:::Archimedes was the first to use an algorithm in order to approximate the value of pi
-        9.82:pi is the equivalent of 22/7
-        5.45:::5.45 is too big
-        6.56
-
-- passer une ligne entre chaque question
-- chaque bonne réponse est précédée d'une étoile
-- une aide est précédé de :
-- un feedback est précédé de ::: 
-(demandez au chatbot s'il peut générer des aides et des feedbacks pour chaque question.)
-
-Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
-
-```
 Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.github.io/IA_H5P/test.html)
 
 
