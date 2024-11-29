@@ -671,10 +671,60 @@ dans Logiquiz.
 
 
 
-
-
-
 Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.github.io/IA_H5P/test.html)
+
+
+## 5.5 faire écrire un mini récit dont vous êtes le héros par une IA
+
+![](images/vampire.jpg)
+
+Twine est un logiciel libre qui permet d'écrire des récits interactifs dans lesquels le joueur incarne un personnage et fait des choix. L'histoire évolue en fonction de ces choix. Pour avoir une idée de ce que peut apporter Twine dans le domaine des bibliothèques, voir par exemple le jeu [Plagiator](https://buformationr2.github.io/plagiator/plagiator.html) destiné aux étudiants de Licence de l'Université de Rennes et de l'université de Rennes 2. 
+
+Téléchargez <a href="vampire_castle.twee" download>le fichier suivant</a> par exemple sur votre bureau. 
+
+Allez sur le [site de Twine](https://twinery.org/2/#/), cliquez sur skip
+Sélectionnez dans le menu Library, puis Import, importez le fichier en .twee dans la fenêtre qui apparaît en bas à droite de l'écran.
+un diagramme apparaît avec des bulles de couleurs différentes qui représentent les différents passages de l'histoire (il y en a 20)
+Jouez cette histoire en cliquant sur le diagramme, puis en sélectionnant "build" et "play" : 
+
+Pas terrible, cette histoire, n'est-ce pas ? 
+
+Elle a été réalisée avec LLama-70B (sur RAGaRenn) et le prompt suivant : 
+
+```text prompt
+
+"Tu es un auteur et tu écris un récit interactif sous la forme d'un fichier qui puisse être compilé par Twine 2. 
+ 
+L'histoire se déroule dans un château hanté par un vampire. Ce château comporte des tours, des galeries, des coursives, des oubliettes, des salles petites ou grandes. Il est hanté par des fantômes, on y trouve aussi des Elfes et des champignons toxiques, ainsi que des pièges. le récit se compose de 20 passages. 
+ 
+chaque passage a un titre précédé de :: 
+
+le premier passage doit être exactement reproduit comme ceci : 
+
+:: StoryData
+{
+  "start": "Start"
+}
+
+le second passage a pour titre ::Start
+ 
+chaque passage fait au maximum 4 lignes 
+ 
+chaque passage contient de deux à trois renvois vers d'autres passages. 
+ 
+Chaque renvoi comporte un lien entre double-crochets ([[ ]]) vers un autre passage. 
+ 
+Aucun renvoi ne doit comporter le titre d'un passage qui n'est pas présent dans les 21 passages fournis 
+ 
+Chaque renvoi fait partie d'une phrase."
+
+```
+
+**Pensez-vous pouvoir obtenir une meilleure histoire avec une IA ?** 
+
+Vous pouvez complètement changer de sujet
+il est conseillé de conserver les 21 prompts
+Tentez d'avoir davantage d'alternatives dans l'histoire et quelques descriptions aussi si possible. 
 
 
 # 6. Enjeux environnementaux et sociaux
@@ -682,6 +732,8 @@ Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.gith
 Si l'entraînement d'une IA est une opération très énergivore et très émettrice de gaz à effets de serre, la majeure partie de ces émissions provient de l'usage que nous faisons de ces modèles (= inférences)
 
 L'activité suivante a pour objet de faire prendre conscience de certains ordres de grandeur en matière de consommation d'énergie et en fonction des types d'intelligence artificielle.
+
+<iframe width="800" height="1500" src="https://damienbelveze.github.io/CFCB_IA/ai_consommation.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
 [ordres de grandeur dans la consommation](https://damienbelveze.github.io/ai_environnement/ai_consommation.html)
 
@@ -704,11 +756,17 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 # 8. crédits logiciels
 
-- Le cours a été réalisé à partir du logiciel libre [**Liascript**](https://github.com/liaScript), un interpréteur permettant de lire du markdown dans le navigateur et de le convertir automatiquement en html.    
-- L'activité Timeline a été réalisée à partir du logiciel libre [**Chronoquiz**](https://www.chronoquiz.net/about) réalisé par Andrew A. Kashner et mis à disposition sur son propre serveur. Le fichier JSON qui a servi à ce jeu est disponible <a href="dans ce dossier" download>dans ce répertoire</a>     
-- Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse".
-- les jeux de carte ont été conçus avec le logiciel libre Inkscape et des icones obtenues sur le site du Nounproject
+- Le cours a été réalisé à partir du logiciel libre [**Liascript**](https://github.com/liaScript), un interpréteur permettant de lire du markdown dans le navigateur et de le convertir automatiquement en html. Remerciements à André Dietrich, son concepteur, de m'avoir aidé quand j'en ai eu besoin pour la gestion des références bibliographiques. 
 
+- L'activité Timeline a été réalisée à partir du logiciel libre [**Chronoquiz**](https://www.chronoquiz.net/about) réalisé par Andrew A. Kashner et mis à disposition sur son propre serveur. Le fichier JSON qui a servi à ce jeu est disponible <a href="dans ce dossier" download>dans ce répertoire</a>   
+
+- Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse".
+
+- les jeux de carte ont été conçus avec le logiciel libre [**Inkscape**](https://inkscape.org/) et des icones obtenues sur le [site du Nounproject](https://thenounproject.com/)
+
+Un grand merci aux administrateurs de RAGaRenn qui ont ouvert l'expérimentation à titre provisoire aux stagiaires de cette formation et à leur aide pour rendre cela possible. 
+
+Merci surtout au CFCB de Poitiers et Amaury Catel, son directeur, ainsi qu'aux informaticiens qui ont chargé Logiquiz sur les postes du CFCB à ma demande. 
 
 
 # Bibliographie
