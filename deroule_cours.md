@@ -727,6 +727,85 @@ il est conseillé de conserver les 21 prompts
 Tentez d'avoir davantage d'alternatives dans l'histoire et quelques descriptions aussi si possible. 
 
 
+## 5.6 Les LLM spécialisés dans le code
+
+Les IAG sont fréquemment utilisées pour générer du code source. Elles ne
+sont pas toutes faites pour cela, et on peut mesurer de grandes
+différences en terme d'exactitude d'un résultat à un autre. Parfois le
+code livré fonctionne, parfois non. Certains LLM entraînés
+spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen
+sont plus efficaces a priori. Mais tout dépend des corpus sur lesquels
+ces LLM ont été entraînés. Certains langages de programmation sont mieux
+représentés que d'autres dans ces corpus, tout simplement parce qu'ils
+sont plus populaires, c'est le cas par exemple de Python et Javascript.
+
+Nous allons tenter de générer du code qui peut être utile à des fins de
+recherche et dont on pourra se rendre compte de l'efficacité sans avoir
+à télécharger quoique ce soit sur notre machine.
+
+Ce code sera précisément une requête en SPARQL pour interroger les
+données de Wikidata.
+
+### A propos de Sparql
+
+SPARQL est le langage de requête qu'on utilise pour extraire de Wikidata
+les listes d'éléments que contient la base. Wikidata étant la liste
+d'ontologies sur laquelle repose Wikipédia. Ces éléments peuvent être de
+très diverses nature : des films, des papillons, des personnes célèbres,
+des maladies, etc. Le tout étant organisé sous la forme de triplets par
+exemple :
+
+
+
+| sujet (Q...)   |      prédicat (P...)      |    objet (Q...) |
+|:---:|:---:|:---:|
+|     Le Python vert (Q849394)) |    a pour habitat (P2974)   |  la forêt (Q4121) |
+|    Le moteur Diesel (Q174174)  |     a été inventé (P1071)  |   A Munich (Q1726) | 
+          
+
+### deux façons d'utiliser le LLM
+
+-   directe :
+
+demander à l'IA de générer du code en sparql pour Wikidata permettant d'obtenir la liste de tous les téléscopes qui se
+trouvent sur le territoire français et qui sont référencés dans Wikidata
+
+-   indirecte :
+
+copier-coller dans le prompt une requête SPARQL parmi les [exemples
+présents](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
+sur cette liste et décrire ce que cela permet d'obtenir. Puis demander à
+avoir la liste de tous les téléscopes présents sur le territoire
+français
+
+Par exemple :
+
+```text prompt
+Voici une requête SPARQL qui permet d'obtenir tous les monts en italie dont l'altitude est supérieure à 4000 mètres : 
+
+SELECT ?item ?itemLabel ?coord ?elev ?picture
+{
+  ?item p:P2044/psn:P2044/wikibase:quantityAmount ?elev ; # normalized height
+        wdt:P625 ?coord ;
+        wdt:P17 wd:Q38 ;
+        wdt:P18 ?picture
+  FILTER(?elev > 4000)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "it" }
+}
+
+Pourrais-tu générer une requête en SPARQL qui permet d'obtenir de Wikidata la liste par ordre alphabétique de nom des téléscopes qui se trouvent en France ?
+```
+
+Faire cette requête avec un LLM spécialisé dans le code (sur RAGaRenn : deepseck ou codeqwen par exemple), puis avec un
+LLM généraliste (par exemple GPT de ChatGPT). Vérifiez que les requêtes
+fonctionnent dans le service de requête de Wikidata, éventuellement,
+corrigez-les.
+
+Quel est votre avis sur les performances de ces IAG pour générer des
+requêtes SPARQL ?
+
+
 # 6. Enjeux environnementaux et sociaux
 
 Si l'entraînement d'une IA est une opération très énergivore et très émettrice de gaz à effets de serre, la majeure partie de ces émissions provient de l'usage que nous faisons de ces modèles (= inférences)
