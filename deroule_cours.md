@@ -219,16 +219,22 @@ Principaux usages et bénéfices rapportés : <br>
 
 # 2. replacer les IAG dans l'Histoire de l'IA et dans le paysage de la Culture Numérique 
 
+<div class="prez">
+                                        {{0}}
 une histoire ancienne mais non linéaire de l'intelligence artificielle
-
 L'histoire des IA ne commence pas avec le lancement auprès du grand public du chatbot ChatGPT, elle remonte au lendemain de la seconde guerre mondiale et comporte des phases d'innovation et d'intense activité scientifique (années 50 et 60 puis année 80 et enfin année 2000 à nos jours) et des périodes de pause (financements en baisse, perte de visibilité de l'IA au profit de l'informatique "classique") qu'on appelle des "hivers de l'IA".
 
+                                        {{1}}
 <iframe name="ngram_chart" src="https://books.google.com/ngrams/graph?content=artificial+intelligence&year_start=1945&year_end=2022&corpus=en&smoothing=3&case_insensitive=false#" width=900 height=500 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+
+</div>
 
 ## 2.1 proposer aux étudiants de se tester sur les différentes phases de l'IA
 
+<div class="prez">
 Les deux activités qui suivent reposent sur le même principe : représenter les différentes étapes de l'évolution de l'intelligence artificielle en remontant de 1950 à nos jours. 
 Si une activité ne fonctionne pas, vous pouvez tenter l'autre 
+</div>
 
 ### Chronoquiz
 
@@ -236,7 +242,9 @@ Si une activité ne fonctionne pas, vous pouvez tenter l'autre
 [timeline de l'IA](https://www.chronoquiz.net/game/36)
 </div>
 
-![](images/chronoquiz.png)
+<a href="https://www.chronoquiz.net/game/36" target="_blank"><img src="images/chronoquiz.png" /></a>
+
+
 
 ### Drag and drop histoire de l'IA
 
@@ -246,7 +254,9 @@ Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="
 
 ## 2.2 IAG : le nouveau couteau suisse ? 
 
+<div class="citation">
 >avec un moteur à explosion, on peut faire des voitures (le moteur sert à faire tourner des roues) ou des tronçonneuses. Mais il n’est pas recommandé d’essayer de rentrer chez soi en utilisant une tronçonneuse. Mieux vaudrait utiliser une voiture. Or l’approche d’openIA – et des utilisateurs – semble consister à adopter la tronçonneuse pour faire aussi l’office de voiture: on ajoute des pneus autour de la chaîne, on construit des routes qui s’adaptent à des tronçonneuses
+</div>
 
 ```bibtex @cite
 @article{vitali-rosatiChatGPTTronconneuse2024,
@@ -257,7 +267,7 @@ Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="
   journal = {Culture numérique. Pour une philosophie du numérique},
   urldate = {2024-09-24},
   abstract = {Blogue de Marcello Vitali-Rosati},
-  howpublished = {http://blog.sens-public.org/marcellovitalirosati/chatgpttronconneuse.html},
+  url = {http://blog.sens-public.org/marcellovitalirosati/chatgpttronconneuse.html},
   langid = {english},
   keywords = {IA}
 }
@@ -279,32 +289,34 @@ Les activités suivantes seront proposées à partir du [site Vittascience](http
 
 ## 3.1 Tokenisation
 
+<div class="prez">
 
-
+                                {{0}}
 La tokenisation consiste à débiter une phrase en unités de sens. 
-
-longtemps je me suis couché de bonne heure
-
+ "longtemps je me suis couché de bonne heure" <br>
 d'une certaine manière on pourrait découper la phrase de cette manière
 
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|:--|:--|:--|:--|:--|:--|:--|:--|
 | longtemps | je | me | suis | couché | de | bonne | heure |
 
-Mais "de" ne constitue pas une unité de sens, c'est plutôt "de bonne heure" qui a une signification particulière dans la phrase. 
-
-Pour autant "de bonne heure" est constitué de deux termes qui peuvent être utilisés dans d'autres textes de manière différente : "heure" et "bonne"
-
-- une *bonne* pâtisserie  
-- c'est l'*heure* de se réveiller  
-
+Mais "de" ne constitue pas une unité de sens, c'est plutôt "de bonnee heure" qui a une signification particulière dans la phrase. 
+Pour autant "de bonne heure" est constitué de deux termes qui peuvent être utilisés dans d'autres textes de manière différente : "heure" et "bonne". <br>
+- une *bonne* pâtisserie  <br>
+- c'est l'*heure* de se réveiller  <br>
 par conséquent si le corpus contient plusieurs textes, on a tout intérêt à faire de ces mots des tokens. 
+
 
                                 {{1}}
 
-La numérisation du texte passe par les tokens, mais pas seulement. Si dans un corpus volumineux, tous les mots font l'objet de token, cette numérisation va prendre un temps considérable. Il convient donc de réduire le nombre de tokens pour faciliter ces calculs. Pour réduire les tokens, les systèmes vont assez souvent repérer les termes les plus utilisés, leur attribuer un token en particulier et conserver ce token dans des mots qui les contient. 
-
+La numérisation du texte passe par les tokens. 
+<br>
+Si dans un corpus volumineux, tous les mots font l'objet de token, cette numérisation va prendre un temps considérable. Il convient donc de réduire le nombre de tokens pour faciliter ces calculs. Pour réduire les tokens, les systèmes vont assez souvent repérer les termes les plus utilisés, leur attribuer un token en particulier et conserver ce token dans des mots qui les contient. 
+<br>
 ainsi *bon* constituera un token, la terminaison de cet adjectif au féminin (-ne) un autre token. Cet autre token pourra aussi être attribué au terme *patron* -> | patron | ne |
+Le fait d'associer deux tokens en fonction d'un contexte est ce qu'on appelle la **vectorisation**. 
 
-Le fait d'associer deux tokens en fonction d'un contexte est ce qu'on appelle la vectorisation. 
+</div>
 
 ```txt Activité
 
@@ -313,6 +325,8 @@ Avec combien de tokens, le chatbot répond t-il à la question "qui a tué le ro
 ```
 
 ## 3.2 Vectorisation  
+
+<div class="prez">
 
                                 {{0}}
 
@@ -326,14 +340,13 @@ les mots Windows et banana sont distants l'un de l'autre dans un grand nombre de
                                 {{1}}
 
 Pour passer d'un mot à un autre, le LLM est formé à faire des substitutions : 
-
+<br><br>
 royauté + homme = roi 
 roi - homme + femme = reine
+</div>
 
                                 {{2}}
-
 ![](images/vectors.png)
-
 ```bibtex @cite
 @misc{metzgerWhatAreTokens2022,
         title = {What Are Tokens, Vectors, and Embeddings \& How Do You Create Them?},
@@ -352,9 +365,12 @@ roi - homme + femme = reine
 
 ## 3.3 Température  
 
-> Pour le cas de l’originalité: il est complètement débile de se demander si chatGPT, ou une autre application basée sur un LLM, est ou pas “créatif” ou “original”. Il faut d’abord se demander “qu’est-ce que j’entends exactement par “originalité”?” Si la réponse est bien formalisée, elle pourra être implémentée dans une approche algorithmique. 
-La “température” utilisée dans une softmax me semble être une excellente définition d’originalité. Je ne dis pas que c’est la seule possible, loin de là, mais c’est une “bonne” définition, car elle est claire et non ambigüe.
+<div class="prez">
 
+                                {{0}}
+> Pour le cas de l’originalité: il est complètement débile de se demander si chatGPT, ou une autre application basée sur un LLM, est ou pas “créatif” ou “original”. Il faut d’abord se demander “qu’est-ce que j’entends exactement par “originalité”?” Si la réponse est bien formalisée, elle pourra être implémentée dans une approche algorithmique. 
+<br>
+> La “température” utilisée dans une softmax me semble être une excellente définition d’originalité. Je ne dis pas que c’est la seule possible, loin de là, mais c’est une “bonne” définition, car elle est claire et non ambigüe.
 ```bibtex @cite
 @misc{vitali-rosatiCreativiteLLM2024,
         type = {Blog de Marcello Vitali-Rosati},
@@ -371,6 +387,7 @@ La “température” utilisée dans une softmax me semble être une excellente 
 }
 ```
 
+                                {{1}}
 *Softmax* = algorithme permettant d'introduire une part d'aléatoire plus ou moins grande et souvent paramétrable pour l'usager dans la succession des tokens. Plus l'aléatoire est faible et plus la suite de caractères est déterministe et s'éloigne
 très peu des cas majoritaires dans les données d'entraînement. (Dans
 Vittascience, les jetons les plus déterministes sont en vert foncé).
@@ -379,59 +396,55 @@ déterminisme. On aura des textes plus "créatifs" souvent illisibles
 quand la température est poussée à son maximum.
 
 ```text Question
-
-Dans le chatbot que vous utilisez, savez-vous si vous pouvez changer la température ? 
-et si oui, comment ?
-
-``` 
-
-<p><img src="images/haikus.png" class="img-fluid figure-img" /></p>
-<figcaption>haikus réalisés par Mixtral</figcaption>
-
-```text Activité
-
-Dans Vittascience, faire un haïku sur un sujet de votre choix (par
-exemple la pluie en Bretagne) avec une température faible (20%) et
-envoyez la même instruction avec une température élevée (75%) ; comparez
-les résultats. Lequel préférez-vous ?
-
-Les token verts manifestent les probabilités les plus hautes, les tokens
-rouges, les probabilités les plus basses (le vert clair et le rose
-correspondent à des valeurs médianes entre ces deux extrêmes). Plus la
-température est haute, plus le rose et le rouge abondent.
-
+        Dans le chatbot que vous utilisez, savez-vous si vous pouvez changer la température ? 
+        et si oui, comment ?
 ```
 
+
+                                {{2}}
+![](images/haikus.png)
+jouer avec la température
+
+                                {{3}}
+```text question
+        Dans Vittascience, faire un haïku sur un sujet de votre choix (par
+        exemple la pluie en Bretagne) avec une température faible (20%) et
+        envoyez la même instruction avec une température élevée (75%) ; comparez
+        les résultats. Lequel préférez-vous ?
+        Les token verts manifestent les probabilités les plus hautes, les tokens
+        rouges, les probabilités les plus basses (le vert clair et le rose
+        correspondent à des valeurs médianes entre ces deux extrêmes). Plus la
+        température est haute, plus le rose et le rouge abondent.
+```
+
+                                {{4}}
 Question : si je souhaite publier ces haïkus, est-ce que je peux le
 faire et toucher des droits d'auteur sur ma publication ? Qui est auteur
 dans ce cas :
-
+<br>
 -   moi en tant qu'auteur du prompt ?
-
+<br>
 -   vittascience en tant que concepteur du site ?
-
+<br>
 -   Mistral en tant que concepteur du LLM Mixtral avec lequel j'ai généré le prompt ?
+<br>
 
-Un LLM est une "calculette de mots" qui fonctionne sur la base de
+                                {{5}}
+Un LLM est une <span class="blue">calculette de mots</span>, un <span class="blue">perroquet stochastique</span> qui fonctionne sur la base de
 rapprochements statistiques entre des mots qui se retrouvent dans des
-contextes identiques. Cela implique que tous les [tokens](#jetons)
-soient convertissables en nombres.
+contextes identiques. Cela implique que tous les [tokens](#jetons) soient convertissables en nombres.
 
+                                {{6}}
 Par exemple, ce prompt généré par Mistral avec le Chatbot de
 [Vittascience](https://fr.vittascience.com/) :
-
 <img src="images/mistral1.png" width="300%">
-
 correspond dans le LLM Mistral à cette suite de nombres :
-
 <img src="images/mistral2.png" width="300%">
-
-Le terme "la" correspond à deux tokens différents : 
-
-- l'adjectif ou le pronom la avec un l minuscule (token id = 1675) 
-- l'adjectif (plus rarement le pronom) La avec un L majuscule (token id = 2486) 
-
-Le point correspond au token id 13. Après le token ID 13 (le point), la probabilité que survienne le la minuscule est bien plus réduite que
+Le terme "la" correspond à deux tokens différents : <br><br>
+- l'adjectif ou le pronom la avec un l minuscule (token id = 1675) <br>
+- l'adjectif (plus rarement le pronom) La avec un L majuscule (token id = 2486) <br>
+Le point correspond au token id 13. Après le token id 13 (le point), 
+la probabilité que survienne le la minuscule est bien plus réduite que
 celle que survienne le La majuscule. Comme tenu que la question posée
 était : "quelle est la première femme à avoir été dans l'espace ?" La
 probabilité que la réponse commence par "La première femmme, etc." est
@@ -439,13 +452,14 @@ importante, mais plus forte encore que la réponse commence par un *L*
 majuscule après un point. En l'occurrence, le modèle statistiquement ne
 permettait pas de débuter la réponse autrement que par un *La*, un *Le*
 ou un *L'*
-
-
 <p><img src="images/mistral3.png" class="img-fluid figure-img" alt="en jaune, le tokenID de *, en orange, le tokeID
 de -La-"/></p>
 
+</div>
+
 ## 3.4 Renforcement  
 
+<div class="prez">
 
                                 {{0}}
 
@@ -496,8 +510,13 @@ En dépit de cette méthode et d'autres plus sophistiquées et moins rudimentair
         - 1. des discussions ordinaires que nous avons avec nos proches et servent de corpus de données   <br>
         - 2. des biais qui sont propres à leurs concepteurs (et plus rarement conceptrices) 
 
+                                {{4}}     
 
-                                {{4}}
+Le renforcement consiste aussi à entourer la réponse de texte qui guide (un peu) l'utilisateur/trice et à renforcer l'anthropomorphisation de l'outil
+![](images/bergstrom.png)
+
+
+                                {{5}}
 Ce travail humain est largement sous-payé et concerne des populations du Sud Global défavorisé. 
 Ferment d'injustices sociales, la concentration de ce travail sur des populations du continent Africain (Kenya, Nigéria, Rwanda, Mali) donne aux textes générés certaines caractéristiques linguistiques propres aux populations concernées. 
 ```bibtex @cite
@@ -516,7 +535,7 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 
 ```
 
-                                {{5}}
+                                {{6}}
         ![](images/delve.png)
 ```bibtex @cite
 @online{shapiraDelvingDelve2024a,
@@ -531,24 +550,29 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 }
 ```
 
+
+</div>
+
 # 4. Comparer les modèles de langage entre eux
 
+<div class="prez">
                                 {{1}}
 Le Ministère de la Culture met à disposition ComparIA pour se familiariser avec différents modèles de langage, leur impact énergétique et leurs performances différentes. 
-Le principe d'usage est simple : 
-- vous sélectionnez un type de prompt parmi ceux proposés  
-- vous rédigez votre prompt et vous avez deux résultats provenant de deux LLM anonymes  
-- Vous indiquez quel est le meilleur résultat et au moment où vous le souhaitez vous levez l'anonymat de ces LLM  
+Le principe d'usage est simple : <br><br>
+- vous sélectionnez un type de prompt parmi ceux proposés  <br>  
+- vous rédigez votre prompt et vous avez deux résultats provenant de deux LLM anonymes  <br>  
+- Vous indiquez quel est le meilleur résultat et au moment où vous le souhaitez vous levez l'anonymat de ces LLM  <br><br>  
 En même temps que le nom de chaque LLM vous avez son statut (propriétaire, / open source), son poids (en nombre de milliards de paramètres), quelques caractéristiques propres à sa création (par exemple modèle microsoft adapté à la langue française) et surtout sa consommation énergétique (en équivalent de temps de CO2 et de temps d'ampoule allumée).
 
                                 {{2}}
-    ![](images/comparIA.png)            
+![](images/comparIA.png)            
 
 
                                 {{3}}
-- ça permet derrière un même chatbot de montrer la pluralité des modèles de langage existants  
-- ça permet de comprendre les spécificités de ces modèles de langage  
-- ça permet de mesurer l'impact écologique de l'IA (manquent toutefois la consommation en eau, en terres rares et un aperçu de l'extraction minière que le façonnage de ce type de modèle induit pour avoir une vision complète de l'empreinte écologique)  
+- ça permet derrière un même chatbot de montrer la pluralité des modèles de langage existants  <br>
+- ça permet de comprendre les spécificités de ces modèles de langage  <br>
+- ça permet de mesurer l'impact écologique de l'IA (manquent toutefois la consommation en eau, en terres rares et un aperçu de l'extraction minière que le façonnage de ce type de modèle induit pour avoir une vision complète de l'empreinte écologique)  <br>
+</div>
 
 # 5. approches pédagogiques
 
@@ -808,6 +832,8 @@ requêtes SPARQL ?
 
 # 6. Enjeux environnementaux et sociaux
 
+## 6.1 de l'IA classificatoire à l'IA génératrice d'images : quel ordre de grandeur dans la consommation d'énergie ? 
+
 Si l'entraînement d'une IA est une opération très énergivore et très émettrice de gaz à effets de serre, la majeure partie de ces émissions provient de l'usage que nous faisons de ces modèles (= inférences)
 
 L'activité suivante a pour objet de faire prendre conscience de certains ordres de grandeur en matière de consommation d'énergie et en fonction des types d'intelligence artificielle.
@@ -816,12 +842,53 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 [ordres de grandeur dans la consommation](https://damienbelveze.github.io/ai_environnement/ai_consommation.html)
 
+## 6.2 Faire émerger les connaissances et les représentations sur l'impact environnemental de l'IA
+
+### Jeu de carte matériel
+
+![](images/cartes_jeu.jpg)
+Jeu de cartes AI et environnement. 
+<a href="jeu_cartes/cartes.zip" download>Jeu téléchargeable ici</a>
+
+L'activité se déroule par groupes de 5 personnes
+
+##### première phase : 20 minutes
+
+sur un cercle central de la feuille sont affichés les verbes suivants :
+
+    extraire
+    calculer
+    refroidir
+    reconnaître
+    prédire
+
+La majorité des cartes a été constituée à partir d’icones issues du site The Nounproject. Il s’agit d’une première étape avant de remplacer ces icones par des icones réutilisables sans mention de la source.
+
+En se basant sur les dessins des cartes, placez-les successivement à proximité de ces verbes. Justifiez auprès des membres de votre groupe vos choix de placement en utilisant vos connaissances sur les ressources nécessaires à faire fonctionner des outils d’intelligence artificielle. Par exemple, a proximité de “refroidir”, vous pouvez tracer des liens vers la carte “rivière” et la carte “montagne”. En effet, Refroidir les datacenters demande beaucoup d’eau, et/ou des conditions climatiques très froides (montagnes proches des pôles). 
+
+##### deuxième phase : 15 minutes
+
+Seul.e un.e membre du groupe reste sur place. Les autres vont au groupe suivant. la personne qui reste sur place est le/la rapporteur/se du groupe. Cette personne explique brièvement au groupe qui arrive pourquoi les cartes ont été positionnées ainsi. Une discussion s'engage avec les arrivants sur les possibles dispositions alternatives de cartes. 
+
+### board numérique
+
+[Accès à l'activité](https://app.klaxoon.com/participate/board/JS8DVJR)
+<a href="https://app.klaxoon.com/participate/board/JS8DVJR" target="_blank"><img src="images/board.png"/></a>
+
+board réalisé avec Klaxoon. Chaque groupe de 5 personnes se voit attribuer une zone du board. Ces personnes répartissent les icones en bas de la zone autour des 5 verbes centraux. 
+Il est possible d'enrichir le tout avec des post-its pour noter ces idées. Possible aussi à un membre de l'équipe de répondre au post-it d'une autre.
+
+
 
 # 7 Quel positionnement pour les bibliothécaires / formateurs ?
+
+[Ouvrir le sondage](https://go.klaxoon.com/9RK78VF)
 
 êtes-vous d'accord avec ces principes : 
 
 - les IAG sont capables d'hallucination, autant que possible on doit inciter à utiliser des outils sur lesquels on a le contrôle
+
+- Les IAG sont en train de révolutionner le travail des étudiants et le nôtre, on va devoir complètement changer de pratiques
 
 - Le pire à propos des IAG, serait de ne rien faire et de continuer comme si ça n'existait pas
 
@@ -829,11 +896,11 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 - Les établissements devraient payer des licences aux versions payantes des IAG afin de mettre tous les étudiants sur un pied d'égalité
 
-- La venue des IAG grand public est pour nous une motivation supplémentaire pour développer nos activités dans deux sens : la culture numérique et l'EMI
+- Un développement de la culture numérique et de l'EMI à l'Université est une réponse importante et suffisante à l'usage des IAG par les étudiant.e.s
 
 
 
-# 8. crédits logiciels
+# 8. crédits logiciels et remerciements
 
 - Le cours a été réalisé à partir du logiciel libre [**Liascript**](https://github.com/liaScript), un interpréteur permettant de lire du markdown dans le navigateur et de le convertir automatiquement en html. Remerciements à André Dietrich, son concepteur, de m'avoir aidé quand j'en ai eu besoin pour la gestion des références bibliographiques. 
 
@@ -842,6 +909,8 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 - Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse".
 
 - les jeux de carte ont été conçus avec le logiciel libre [**Inkscape**](https://inkscape.org/) et des icones obtenues sur le [site du Nounproject](https://thenounproject.com/)
+
+- le board a été réalisé avec Klaxoon, outil propriétaire accessible en édition aux membres de la communauté universitaire de Rennes
 
 Un grand merci aux administrateurs de RAGaRenn qui ont ouvert l'expérimentation à titre provisoire aux stagiaires de cette formation et à leur aide pour rendre cela possible. 
 

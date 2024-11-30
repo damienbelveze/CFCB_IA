@@ -1,5 +1,5 @@
-.body {
-    font-size: 15;
+body {
+    font-size: 20!important;
 }
 
 
@@ -10,3 +10,8 @@
 .prez {
     font-size: 2em;
 }
+
+.citation {
+    font-style: italic !important;
+    font-size: 2em !important; 
+  }
