@@ -631,7 +631,8 @@ this is a diagramma made with ASCII :
 make a diagramme of this kind to represent how a RAG (retrieve augmented generation tool) works
 ```
 
-
+[Accès à l'équipe ARDEL de RAGaRenn](https://ragarenn.eskemm-numerique.fr/ardel@univren/app)
+(il faut au préalable avoir accepté les conditions d'usage du RAG, voir mail reçu avant la formation. Vos identifiants vous ont également été envoyés par mail, quelques jours avant la formation. )
 
 
 # 5. approches pédagogiques
