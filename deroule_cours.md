@@ -8,6 +8,10 @@ date: Décembre 2024
 
 email: damien.belveze@univ-rennes.fr 
 
+attribute: [Aider les étudiants à prendre du recul par rapport à leurs usages des outils d'IA](https://liascript.github.io/course/?https://raw.githubusercontent.com/damienbelveze/CFCB_IA/main/deroule_cours.md#1) 
+        by [Damien Belvèze](damien.belveze@univ-rennes.fr) 
+        is licensed under [CC-by-sa](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+
 language: fr 
 
 link: lia.css
@@ -32,6 +36,7 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 <div class="prez">
 Damien belvèze, Service Commun de Documentation, Université de Rennes
 </div>
+
 
 ## 1.1 Présentation du formateur
 
@@ -504,19 +509,28 @@ Cette correction se fait sur la base de la discrimination positive, en injectant
 Voici ce que Dall-E générait en juillet 2022 avec le prompt "une personne portant un t-shirt sur lequel il y a écrit"
         ![](images/debiaiser_IA.png) 
 
-        
-                                {{3}}  
+
+                                {{3}}
+Les LLM développés par des entreprises comme OpenAI, que ce soit par leur dataset, leurs règles, leurs paramètres, ou la censure qu'elles appliquent à certains prompts "indésirables" représentent les biais culturels de l'Amérique du Nord et particulièrement des Etats-Unis
+![](images/police_islandaise.png)
+La police islandaise se lance dans une campagne de prévention dans les écoles. Elle utilise une image générée par IA. Cette image fait scandale, car les parents ne conçoivent pas que des policiers armés (cf. le holster à la ceinture du policier) entrent dans une école. Armes et enfance sont deux mondes séparés. Mais aux Etats-Unis, certains parlent d'armer les professeurs pour empêcher les tueries de masse...
+Par ailleurs, si cette image postée par la police sur Facebook est bien légendée comme une production réalisée avec l'aide d'une IAG, l'uniforme n'est pas celui de la police islandaise. 
+([source](https://www.ruv.is/frettir/innlent/2024-10-20-logreglan-a-sudurnesjum-aetlar-ad-haetta-ad-nota-gervigreindarmyndir-af-logregluthjonum-425104) en islandais, traduction opérée avec Google Traduction)
+
+
+
+                                {{4}}  
 En dépit de cette méthode et d'autres plus sophistiquées et moins rudimentaires, les chatbots héritent en grande partie des discours dominants et des stéréotypes racistes, sexistes, validistes ou classistes qui sont ceux ! <br>
         - 1. des discussions ordinaires que nous avons avec nos proches et servent de corpus de données   <br>
         - 2. des biais qui sont propres à leurs concepteurs (et plus rarement conceptrices) 
 
-                                {{4}}     
+                                {{5}}     
 
 Le renforcement consiste aussi à entourer la réponse de texte qui guide (un peu) l'utilisateur/trice et à renforcer l'anthropomorphisation de l'outil
 ![](images/bergstrom.png)
 
 
-                                {{5}}
+                                {{6}}
 Ce travail humain est largement sous-payé et concerne des populations du Sud Global défavorisé. 
 Ferment d'injustices sociales, la concentration de ce travail sur des populations du continent Africain (Kenya, Nigéria, Rwanda, Mali) donne aux textes générés certaines caractéristiques linguistiques propres aux populations concernées. 
 ```bibtex @cite
@@ -535,7 +549,7 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 
 ```
 
-                                {{6}}
+                                {{7}}
         ![](images/delve.png)
 ```bibtex @cite
 @online{shapiraDelvingDelve2024a,
@@ -555,6 +569,8 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 
 # 4. Comparer les modèles de langage entre eux
 
+## Avec ComparIA
+
 <div class="prez">
                                 {{1}}
 Le Ministère de la Culture met à disposition ComparIA pour se familiariser avec différents modèles de langage, leur impact énergétique et leurs performances différentes. 
@@ -573,6 +589,50 @@ En même temps que le nom de chaque LLM vous avez son statut (propriétaire, / o
 - ça permet de comprendre les spécificités de ces modèles de langage  <br>
 - ça permet de mesurer l'impact écologique de l'IA (manquent toutefois la consommation en eau, en terres rares et un aperçu de l'extraction minière que le façonnage de ce type de modèle induit pour avoir une vision complète de l'empreinte écologique)  <br>
 </div>
+
+## RAGaRenn
+
+```ascii
+
++---------------+   +---------------+   +---------------+
+|  User Query   |-->|  Retrieval    |-->|  Augmentation |
+|               |   |  Module       |   |  Module       |
++---------------+   +---------------+   +---------------+
+              ^         |                     ^
+              |         V                     |
+.-------------+-----------------------.       |
+| Knowledge Graph                     |       |
+'-------------------------------------'       |
+              |                               |       |
+              V                               V       V
++---------------+   +---------------+   +---------------+
+|  Ranker       |-->|  Generator    |<--|  Output       |
+|               |   |  Module       |   |               |
++---------------+   +---------------+   +---------------+
+
+```
+(diagramme constitué avec RAGaRenn en utilisant le modèle LLama 70B) voir le prompt ci-dessous)
+
+```text prompt
+
+this is a diagramma made with ASCII : 
+
++------+   +-----+   +-----+   +-----+
+|      |   |     |   |     |   |     |
+| Foo  +-->| Bar +---+ Baz |<--+ Moo |
+|      |   |     |   |     |   |     |
++------+   +-----+   +--+--+   +-----+
+              ^         |
+              |         V
+.-------------+-----------------------.
+| Hello here and there and everywhere |
+'-------------------------------------'
+
+make a diagramme of this kind to represent how a RAG (retrieve augmented generation tool) works
+```
+
+
+
 
 # 5. approches pédagogiques
 
@@ -635,7 +695,7 @@ critères :
 
 <iframe width="1000" height="700" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
-Mesure des biais dans la génération d'images 
+activité réalisée par Lenaick Denis, SCD Université de Rennes
 
 
 
@@ -756,12 +816,12 @@ Tentez d'avoir davantage d'alternatives dans l'histoire et quelques descriptions
 Les IAG sont fréquemment utilisées pour générer du code source. Elles ne
 sont pas toutes faites pour cela, et on peut mesurer de grandes
 différences en terme d'exactitude d'un résultat à un autre. Parfois le
-code livré fonctionne, parfois non. Certains LLM entraînés
-spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen
-sont plus efficaces a priori. Mais tout dépend des corpus sur lesquels
-ces LLM ont été entraînés. Certains langages de programmation sont mieux
-représentés que d'autres dans ces corpus, tout simplement parce qu'ils
-sont plus populaires, c'est le cas par exemple de Python et Javascript.
+code livré fonctionne, parfois non. 
+Certains LLM entraînés spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen
+sont plus efficaces a priori. Mais tout dépend des corpus sur lesquelsces LLM ont été entraînés. 
+Certains langages de programmation sont mieux
+représentés que d'autres dans ces corpus, tout simplement parce qu'il
+sont plus populaires, c'est le cas par exemple de Python et Javascrit.
 
 Nous allons tenter de générer du code qui peut être utile à des fins de
 recherche et dont on pourra se rendre compte de l'efficacité sans avoir
@@ -823,16 +883,11 @@ Pourrais-tu générer une requête en SPARQL qui permet d'obtenir de Wikidata la
 
 Faire cette requête avec un LLM spécialisé dans le code (sur RAGaRenn : deepseck ou codeqwen par exemple), puis avec un
 LLM généraliste (par exemple GPT de ChatGPT). Vérifiez que les requêtes
-fonctionnent dans le service de requête de Wikidata, éventuellement,
-corrigez-les.
+fonctionnent dans le [service de requête de Wikidata](https://query.wikidata.org/), éventuellement, corrigez-les.
 
-Quel est votre avis sur les performances de ces IAG pour générer des
-requêtes SPARQL ?
+Quel est votre avis sur les performances de ces IAG pour générer des requêtes SPARQL ?
 
-
-# 6. Enjeux environnementaux et sociaux
-
-## 6.1 de l'IA classificatoire à l'IA génératrice d'images : quel ordre de grandeur dans la consommation d'énergie ? 
+## 5.7 de l'IA classificatoire à l'IA génératrice d'images : quel ordre de grandeur dans la consommation d'énergie ? 
 
 Si l'entraînement d'une IA est une opération très énergivore et très émettrice de gaz à effets de serre, la majeure partie de ces émissions provient de l'usage que nous faisons de ces modèles (= inférences)
 
@@ -842,9 +897,32 @@ L'activité suivante a pour objet de faire prendre conscience de certains ordres
 
 [ordres de grandeur dans la consommation](https://damienbelveze.github.io/ai_environnement/ai_consommation.html)
 
-## 6.2 Faire émerger les connaissances et les représentations sur l'impact environnemental de l'IA
+Source de l'activité :
 
-### Jeu de carte matériel
+```bibtex cite
+
+@online{luccioniPowerHungryProcessing2023a,
+  title = {Power Hungry Processing: Watts Driving the Cost of AI Deployment?},
+  shorttitle = {Power Hungry Processing},
+  author = {Luccioni, Alexandra Sasha and Jernite, Yacine and Strubell, Emma},
+  date = {2023-11-28},
+  eprint = {2311.16863},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2311.16863},
+  urldate = {2023-12-13},
+  abstract = {Recent years have seen a surge in the popularity of commercial AI products based on generative, multi-purpose AI systems promising a unified approach to building machine learning (ML) models into technology. However, this ambition of "generality" comes at a steep cost to the environment, given the amount of energy these systems require and the amount of carbon that they emit. In this work, we propose the first systematic comparison of the ongoing inference cost of various categories of ML systems, covering both task-specific (i.e. finetuned models that carry out a single task) and `general-purpose' models, (i.e. those trained for multiple tasks). We measure deployment cost as the amount of energy and carbon required to perform 1,000 inferences on representative benchmark dataset using these models. We find that multi-purpose, generative architectures are orders of magnitude more expensive than task-specific systems for a variety of tasks, even when controlling for the number of model parameters. We conclude with a discussion around the current trend of deploying multi-purpose generative ML systems, and caution that their utility should be more intentionally weighed against increased costs in terms of energy and emissions. All the data from our study can be accessed via an interactive demo to carry out further exploration and analysis.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {AI}
+}
+```
+
+
+# 6. Faire émerger les connaissances et les représentations sur l'impact environnemental de l'IA
+
+
+## 6.1 Jeu de carte matériel
 
 ![](images/cartes_jeu.jpg)
 Jeu de cartes AI et environnement. 
@@ -866,11 +944,11 @@ La majorité des cartes a été constituée à partir d’icones issues du site 
 
 En se basant sur les dessins des cartes, placez-les successivement à proximité de ces verbes. Justifiez auprès des membres de votre groupe vos choix de placement en utilisant vos connaissances sur les ressources nécessaires à faire fonctionner des outils d’intelligence artificielle. Par exemple, a proximité de “refroidir”, vous pouvez tracer des liens vers la carte “rivière” et la carte “montagne”. En effet, Refroidir les datacenters demande beaucoup d’eau, et/ou des conditions climatiques très froides (montagnes proches des pôles). 
 
-##### deuxième phase : 15 minutes
+#### deuxième phase : 15 minutes
 
 Seul.e un.e membre du groupe reste sur place. Les autres vont au groupe suivant. la personne qui reste sur place est le/la rapporteur/se du groupe. Cette personne explique brièvement au groupe qui arrive pourquoi les cartes ont été positionnées ainsi. Une discussion s'engage avec les arrivants sur les possibles dispositions alternatives de cartes. 
 
-### board numérique
+## 6.2 board numérique
 
 [Accès à l'activité](https://app.klaxoon.com/participate/board/JS8DVJR)
 <a href="https://app.klaxoon.com/participate/board/JS8DVJR" target="_blank"><img src="images/board.png"/></a>
@@ -906,15 +984,37 @@ Il est possible d'enrichir le tout avec des post-its pour noter ces idées. Poss
 
 - L'activité Timeline a été réalisée à partir du logiciel libre [**Chronoquiz**](https://www.chronoquiz.net/about) réalisé par Andrew A. Kashner et mis à disposition sur son propre serveur. Le fichier JSON qui a servi à ce jeu est disponible <a href="dans ce dossier" download>dans ce répertoire</a>   
 
-- Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse".
+- Les activités H5P ont été réalisées avec le logiciel libre [**logiquiz**](https://ladigitale.dev/logiquiz/) maintenu et mis à disposition par La Digitale. On peut les récupérer pour les adapter en cliquant sur "reuse". Elles ont été intégrées à Liascript en suivant la méthode développée par [Camilo Mora](https://github.com/Camilo-Mora/H5P).
 
 - les jeux de carte ont été conçus avec le logiciel libre [**Inkscape**](https://inkscape.org/) et des icones obtenues sur le [site du Nounproject](https://thenounproject.com/)
 
-- le board a été réalisé avec Klaxoon, outil propriétaire accessible en édition aux membres de la communauté universitaire de Rennes
+- le board, ainsi que le sondage final a été réalisé avec Klaxoon, outil propriétaire accessible en édition aux membres de la communauté universitaire de Rennes
 
 Un grand merci aux administrateurs de RAGaRenn qui ont ouvert l'expérimentation à titre provisoire aux stagiaires de cette formation et à leur aide pour rendre cela possible. 
 
 Merci surtout au CFCB de Poitiers et Amaury Catel, son directeur, ainsi qu'aux informaticiens qui ont chargé Logiquiz sur les postes du CFCB à ma demande. 
+
+# annexes
+
+Prompt RAGaRenn pour concevoir le diagramme. 
+
+```text prompt
+
+this is a diagramma made with ASCII : 
+
++------+   +-----+   +-----+   +-----+
+|      |   |     |   |     |   |     |
+| Foo  +-->| Bar +---+ Baz |<--+ Moo |
+|      |   |     |   |     |   |     |
++------+   +-----+   +--+--+   +-----+
+              ^         |
+              |         V
+.-------------+-----------------------.
+| Hello here and there and everywhere |
+'-------------------------------------'
+
+make a diagramme of this kind to represent how a RAG (retrieve augmented generation tool) works
+```
 
 
 # Bibliographie
