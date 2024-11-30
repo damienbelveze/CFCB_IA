@@ -16,6 +16,8 @@ language: fr
 
 link: lia.css
 
+icon: ./images/etoile.png
+
 comment: ce support s'adresse à des personnels de bibliothèque, formateurs et professionnels de la documentation. 
 
 import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
@@ -88,28 +90,69 @@ Damien belvèze, Service Commun de Documentation, Université de Rennes
 </div>
 
 ## 1.3 Réponses au questionnaire
+<div class="prez">
+Merci pour les réponses au <a href="https://enquetes.univ-rennes.fr/index.php/778213?lang=fr" target="_blank">questionnaire</a> que vous m'avez remises ! (19 réponses obtenues)
+
 
                     {{0}}
-
 votre établissement a t-il une politique ou une charte en matière d'usage des outils d'Intelligence Artificielle Générative (IAG) ? tels ChatGPT
-
 ![](charts/question1.png)
 
-                    {{1}}
 
+                    {{1}}
 A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 1 = Je n'en ai pas entendu parler 5 = Je saurais expliquer en quoi cela consiste à un.e étudiant.e
 
 **Grand Modèle de Langage (LLM)**
-
 ![](charts/question2.png)
-
 **Vectorisation**
-
 ![](charts/question3.png)
-
 **tokenisation**
-
 ![](charts/question4.png)
+**entraînement et inférences**
+![](charts/question5.png
+**RAG, retrieve augmented generation**
+![](charts/question6.png)
+**Open Source**
+![](charts/question7.png)
+**fine tuning**
+![](charts/question8.png)
+
+                        {{2}}
+Assurez-vous des formations auprès des étudiants dans votre établissement
+![](charts/question9.png)
+
+                        {{3}}
+Avec quelle fréquence utilisez-vous des outils d'intelligence artificielle comme ChatGPT ?
+![](charts/question10.png)
+
+                        {{4}}
+Vous aidez-vous de l'IAG pour créer vos supports de cours ?
+![](charts/question11.png)
+
+                        {{5}}
+Intégrez-vous l'usage d'outils d'intelligence artificielle dans vos sessions de formation ?
+![](charts/question12.png)
+
+                        {{6}}
+Par quel biais abordez-vous la question des IAG dans vos formations ?
+![](charts/question13.png)
+
+                        {{7}}
+Avez-vous des intérêts, des questions particulières à poser lors de la formation ?<br><br>
+La <span class="blue">validité des sources</span>, le <span class="blue">plagiat</span><br>
+Je souhaite découvrir comment les étudiants utilisent ses outils, dans quel cadre <span class="blue">légal</span>, avec quelles difficultés/quels avantages et quelles limites. En premier lieu pour ma culture professionnelle puis dans un second temps si j'en ai l'occasion, pour pouvoir créer un temps d'échange et/ou de formation avec les étudiants.<br>
+Je me questionne sur le <span class="blue">positionnement des personnels de bibliothèques</span>, et notamment des formateurs, en ce qui concerne l'IAG : <span class="blue">sommes-nous légitimes pour former à des outils de type ChatGPT, Perplexity</span> ? <br>
+Ne devrions-nous pas nous <span class="blue">centrer sur des outils qui permettent une recherche documentaire de qualité</span> et de niveau universitaire (cf intégration de l'IA dans Cairn, JSTOR, Elsevier...) et amener les étudiants à les utiliser (plutôt que les IA "grand public") ? <br>
+Je voudrais avoir des infos pour l'orienter pour une bonne utilisation de l'IA et qu'il ne fasse pas du <span class="blue">copier-coller</span> dans leur futur mémoire. Et que l'on détecte à la lecture de leur mémoire ou même dans la vérification de la bibliographie.  <br>
+quels sont les outils les plus fréquemment utilisés et <span class="blue">comment les reconnaitre dans une copie</span>.  <br>
+Mieux comprendre le fonctionnement des IA pour savoir comment les utiliser et comment guider les étudiants dans leur utilisation, notamment dans la <span class="blue">recherche de documents et l'exploitation des données</span>.  <br>
+Les étudiants nous parlent de l'IA réellement depuis 2 ans, nous avons travailler sur l'<span class="blue">aspect droit d'auteur et plagiat</span>, mais devrions approfondir les outils que nous ne maîtrisons pas totalement contrairement aux étudiants <br>
+L'usage d'un outil d'IA pour créer des <span class="blue">revues de littérature</span> (domaines de la santé) : meilleurs outils, méthodes <br>
+<span class="blue">Hallucinations</span>, biais et limites des outils d'IA, <span class="blue">citation des sources, vérification des réponses</span> apportées par l'IA, regard critique, autorité intellectuelle <br>
+J'aimerais connaitre les limites de l'IA par rapport à sa pertinence en matière de recherche bibliographique pour pouvoir, si besoin est, adapter la pédagogie de recherche documentaire auprès des étudiants.  <br>
+
+</div>
+
 
 
 ## 1.4 premiers retours sur les usages des IAG par les étudiants dans le cadre de leurs études
@@ -119,7 +162,6 @@ A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 
 <div class="prez">
 
                 {{0}}
-
 Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées du Supérieur)
 
 ```bibtex @cite
@@ -136,7 +178,6 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
         - **usage d'outils payants (GPT4) : 30%**  
 
                 {{1}}
-
         - 52% constatent que ChatGPT les influence dans leurs choix  
         - 66% des répondants sont sensibles au fait que ChatGPT charrie des références culturelles et des biais nord-américains  
         - 59% constatent que ChatGPT fait des erreurs  
@@ -144,13 +185,11 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
         - 65% estiment que le fait que l'employeur mette à disposition des IAG aux employés fait partie de leurs critères de choix pour leur futur emploi 
 
                 {{2}}
-
         - 49% des étudiants considèrent que les IAG peuvent constituer un risque pour la démocratie
 
         - <div class="blue">51% des étudiants admettent qu'ils ont du mal à se passer de ChatGPT</div>
 
                 {{3}}
-
         L'échantillon n'est peut-être pas représentatif : certaines disciplines, une certaine aisance des étudiants qui ont pu faire le choix d'écoles privées coûteuses.
 
 </div>
@@ -634,6 +673,17 @@ make a diagramme of this kind to represent how a RAG (retrieve augmented generat
 [Accès à l'équipe ARDEL de RAGaRenn](https://ragarenn.eskemm-numerique.fr/ardel@univren/app)
 (il faut au préalable avoir accepté les conditions d'usage du RAG, voir mail reçu avant la formation. Vos identifiants vous ont également été envoyés par mail, quelques jours avant la formation. )
 
+# 3.5 une petite question avant de continuer ? 
+
+Comment se définit la longueur de la réponse qui va être apportée par l'outil d'IA générative ?
+
+
+[[ ]] en nombre de vecteurs
+[[x]] en nombre de tokens
+[[ ]] en nombre de caractères
+[[ ]] en nombre de lignes 
+[[ ]] en degrés de température
+<script> alert("@input") </script>
 
 # 5. approches pédagogiques
 
@@ -692,7 +742,7 @@ critères :
 - les contenus choisis sont-ils intéressants, pertinents ?  
 - l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ?
 
-## 5.2 reconnaissance d'images générées par IA (ou pas)
+## 5.2 reconnaissance d'images générées par IA (ou pas) ⭐
 
 <iframe width="1000" height="700" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
@@ -701,7 +751,7 @@ activité réalisée par Lenaick Denis, SCD Université de Rennes
 
 
 
-## 5.3 Mesure des biais à partir de la génération d'images
+## 5.3 Mesure des biais à partir de la génération d'images ⭐⭐
 
 Pour évaluer les biais de genre/ethniques des IAG, on peut générer 4 images sur [Fotor](https://www.fotor.com/fr/ai-image-generator/) :
 
@@ -725,7 +775,7 @@ Voici la procédure à suivre pour éviter de compromettre son adresse mail :
 2. Certains détails vous paraissent-ils manifester qu'il s'agit d'images générées par des IAG ? 
 
 ```
-## 5.4 créer un quiz à partir d'un texte long
+## 5.4 créer un quiz à partir d'un texte long ⭐⭐⭐
 
                                 {{0}}
 ![](images/data_good_ai.png)
@@ -759,7 +809,7 @@ dans Logiquiz.
 Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.github.io/IA_H5P/test.html)
 
 
-## 5.5 faire écrire un mini récit dont vous êtes le héros par une IA
+## 5.5 faire écrire un mini récit dont vous êtes le héros par une IA ⭐⭐⭐
 
 ![](images/vampire.jpg)
 
@@ -812,7 +862,7 @@ il est conseillé de conserver les 21 prompts
 Tentez d'avoir davantage d'alternatives dans l'histoire et quelques descriptions aussi si possible. 
 
 
-## 5.6 Les LLM spécialisés dans le code
+## 5.6 Les LLM spécialisés dans le code ⭐⭐⭐⭐
 
 Les IAG sont fréquemment utilisées pour générer du code source. Elles ne
 sont pas toutes faites pour cela, et on peut mesurer de grandes
@@ -888,7 +938,9 @@ fonctionnent dans le [service de requête de Wikidata](https://query.wikidata.or
 
 Quel est votre avis sur les performances de ces IAG pour générer des requêtes SPARQL ?
 
-## 5.7 de l'IA classificatoire à l'IA génératrice d'images : quel ordre de grandeur dans la consommation d'énergie ? 
+## 5.7 des outils plus ou moins énergivores ⭐
+
+quel ordre de grandeur dans la consommation d'énergie selon les différentes catégories d'IA? 
 
 Si l'entraînement d'une IA est une opération très énergivore et très émettrice de gaz à effets de serre, la majeure partie de ces émissions provient de l'usage que nous faisons de ces modèles (= inférences)
 
@@ -995,27 +1047,6 @@ Un grand merci aux administrateurs de RAGaRenn qui ont ouvert l'expérimentation
 
 Merci surtout au CFCB de Poitiers et Amaury Catel, son directeur, ainsi qu'aux informaticiens qui ont chargé Logiquiz sur les postes du CFCB à ma demande. 
 
-# annexes
-
-Prompt RAGaRenn pour concevoir le diagramme. 
-
-```text prompt
-
-this is a diagramma made with ASCII : 
-
-+------+   +-----+   +-----+   +-----+
-|      |   |     |   |     |   |     |
-| Foo  +-->| Bar +---+ Baz |<--+ Moo |
-|      |   |     |   |     |   |     |
-+------+   +-----+   +--+--+   +-----+
-              ^         |
-              |         V
-.-------------+-----------------------.
-| Hello here and there and everywhere |
-'-------------------------------------'
-
-make a diagramme of this kind to represent how a RAG (retrieve augmented generation tool) works
-```
 
 
 # Bibliographie
