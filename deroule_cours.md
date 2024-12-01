@@ -296,6 +296,8 @@ Si une activité ne fonctionne pas, vous pouvez tenter l'autre
 
 Si l'activité h5P n'apparaît pas clairement à l'écran, afficher la <a href="activite_histoire_ia.html" target="_blank">page correspondante au quiz</a>)
 
+voir [commentaire de l'activité](#annexe--histoire-de-lia)
+
 ## 2.2 IAG : le nouveau couteau suisse ? 
 
 <div class="citation">
@@ -634,19 +636,19 @@ En même temps que le nom de chaque LLM vous avez son statut (propriétaire, / o
 ```ascii
 
 +---------------+   +---------------+   +---------------+
-|  User Query   |-->|  Retrieval    |-->|  Augmentation |
-|               |   |  Module       |   |  Module       |
+|  requête      |-->|  traitement   |-->|  Augmentation |
+|  usager       |   |  requête      |   | de la requête |
 +---------------+   +---------------+   +---------------+
               ^         |                     ^
               |         V                     |
 .-------------+-----------------------.       |
-| Knowledge Graph                     |       |
+| base de vecteurs                    |       |
 '-------------------------------------'       |
               |                               |       |
               V                               V       V
 +---------------+   +---------------+   +---------------+
-|  Ranker       |-->|  Generator    |<--|  Output       |
-|               |   |  Module       |   |               |
+|  chunck       |-->|  module de    |-->|  réponse      |
+|  contextuels  |   |  génération   |   |               |
 +---------------+   +---------------+   +---------------+
 
 ```
@@ -672,6 +674,22 @@ make a diagramme of this kind to represent how a RAG (retrieve augmented generat
 
 [Accès à l'équipe ARDEL de RAGaRenn](https://ragarenn.eskemm-numerique.fr/ardel@univren/app)
 (il faut au préalable avoir accepté les conditions d'usage du RAG, voir mail reçu avant la formation. Vos identifiants vous ont également été envoyés par mail, quelques jours avant la formation. )
+
+## Pourquoi l'expérience RAGaRenn
+
+<div class="prez">
+
+- intérêt du RAG pour une meilleure fiabilité des résultats <br>
+- acculturer les personnels de l'Université <br>
+- Avoir une base et un outil commun pour réfléchir aux usages à promouvoir et ceux à déconseiller <br>
+- offrir un cadre sûr aux expérimentateurs (communautés bienveillante, conservation des données soumise au minimum technique et juridique, tiers de confiance pour l'hébergement) <br>
+- contrôle du coût et de l'empreinte énérgétique <br>
+
+</div>
+
+Maîtrise des coûts : communication du VP Numérique Olivier Wong-Kee-Ham le 12 juin 2024 à l'Université de Rennes
+
+![](images/cout_IA.png)
 
 # 3.5 une petite question avant de continuer ? 
 
@@ -1047,6 +1065,56 @@ Un grand merci aux administrateurs de RAGaRenn qui ont ouvert l'expérimentation
 
 Merci surtout au CFCB de Poitiers et Amaury Catel, son directeur, ainsi qu'aux informaticiens qui ont chargé Logiquiz sur les postes du CFCB à ma demande. 
 
+# annexe : histoire de l'IA
+
+<div class="prez">
+
+| date | événement |
+| :---: | :---:|
+| 1965 | Hubert Dreyfus publie une critique de la notion d'IA en contestant le fait que l'intelligence ne soit réduite qu'à une simple fonction de calcul [^2] |
+| 1966 | Eliza, le premier chatbot voit le jour [^3] |
+| 2009 | Fei Fei Li initie ImageNet, l'une des plus grandes bases ouvertes d'images du web |
+| 2011 | Siri, l'assistant vocal d'Apple débarque dans les maison |
+| 1950 | Un test voit le jour pour déterminer si on a affaire à une machine ou à un humain [^4] |
+| 1956 | Le terme d'"intelligence artificielle" fait son apparition à la conférence de Dartmouth College |
+| 1957 | Frank Rosenblatt invente à l'Université Cornell le premier algorithme d'apprentissage supervisé au moyen d'un réseau de neurones, le Perceptron[^1] |
+| 1997 | Deep Blue bat Kasparov aux échecs |
+| 2012 | Suite à des plaintes, Facebook ferme son système de reconnaissance faciale qu'il avait ouvert l'année précédente [^6]|
+| 2016 | Des IA traitent des données provenant de réseaux sociaux pour influencer le vote des électeurs [^7] |
+| 2019 | Le Allen Institute fait paraître le premier article ("Green AI") qui mesure directement l'impact environnemental suscité par les IA [^5] |
+| 2023 | Llama 2 un modèle de langage aussi puissant que GPT est mis à la disposition des internautes par Facebook [^8]|
+
+</div>
+
+Cette série de dates a été sélectionnée à partir de deux sources : une activité de la Bataille de l'IA (association Latitudes), proposée aux futurs animateurs et de la [vidéo](https://youtu.be/qmwJx-r5vmw?si=6Ss2Ka3xD_EeuOZk) du CEA intégré dans le cours consacré par les bibliothécaires de Science Po Lyon à l'IA (@ceaHistoireSciencesLhistoire2018)  
+
+_______________________
+
+<div class="prez">
+
+[^1]:  "les machines informatiques pensent avec un langage qui est celui des nombres ; nous transformons tout en chiffre pour les faire fonctionner. Elles sont nulles en matière de perception. Elles n'ont pas de langage naturel sous-jacent, comme nous ou les animaux. Lorsqu'on veut les faire développer un modèle de monde autour d'elles-mêmes, on s'aperçoit que ce n'est pas le bon dispositif.
+Vous voulez qu'elles jouent aux échecs, très bien. Notre programme de jeux d'échec au MIT est déjà un joueur de 2e rang ; dans un an je pense qu'il sera de 1er rang ; ce sera pas un maitre au bout d'un an mais dans six ans environ. Dans six ans, il deviendra une technologie de 1er rang qu'aucun humain ne pourra dépasser.
+Je souhaite que ca aille plus loin, et ça ira plus loin, car nous pouvons réduire ces choses là à des nombres"
+(Warren McCulloch)
+
+[^2]: On peut discuter en effet de la notion d'intelligence appliquée à une machine qui se livre à des calculs sur des mots ("calculette de mots", "perroquet stochastique"). On peut dire que le propre d'une IA est de simuler l'intelligence humaine, mais la comparaison entre un réseau de neurones biologique et son équivalent dans le champ de l'IA est très imparfaite. 
+
+[^3]: On peut toujours discuter avec Eliza dans une interface un peu modernisée (http://eliza.botlibre.com/) on se rend assez vite compte qu'Eliza échoue au bout de peu de temps à passer le test de Turing. 
+
+[^4]: Il s'agit bien sûr du fameux test de Turing qui permet de distinguer un humain d'une machine avec laquelle on joue pour la faire passer pour un humain ("imitation game")
+
+[^5]: permet d'inclure les préoccupations reliées aux émissions de GES et à la consommation d'eau et de minéraux des outils d'IA.
+
+[^6]: introduit les aspects éthiques de l'IA. L'IA capte les données personnelles, elle permet aussi dans bien des endroits de surveiller les salariés, voire des populations entières (cf. caméras à reconnaissance faciale installées dans certaines villes dont Paris depuis les Jeux Olympiques)
+
+[^7]: il s'agit évidemment de l'affaire Cambridge Analytica. Les IA peuvent être déployées pour influencer le vote des électeurs dans des campagnes de désinformation ciblée
+
+[^8]: interroger la notion d'ouverture en ce qui concerne les LLM : qu'est-ce que ça signifie en l'occurrence "ouvert" ? Pour Meta, Llama 2 est un système ouvert, parce que n'importe qui peut le charger depuis le site huggingface et l'intégrer à son système. 
+En revanche pour l'OSI (Open Source Initiative), dans la mesure où Meta non seulement ne donne pas accès au corpus d'entraînement, mais en outre, a défaut, ne le décrit pas de manière suffisante pour le réutiliser à d'autres fins, il ne peut s'agir d'un modèle de langage *Open Source*. 
+
+</div>
+
+[retour](#2-replacer-les-iag-dans-lhistoire-de-lia-et-dans-le-paysage-de-la-culture-numérique )
 
 
 # Bibliographie
