@@ -31,16 +31,25 @@ setTimeout(() => { window.bibliographyLoad("https://raw.githubusercontent.com/Li
 
 
 
-# 1. Bienvenue
+# Aider les étudiants à prendre du recul par rapport à leurs usages des outils d'IA 
 
-<img src="images/jorgi.jpg" alt="jorgi, un personnage de Papers, please" width="100px">
+<div class="prez">
+CFCB Poitiers, 3 décembre 2024
+</div>
+
+![](images/chatGPT_no_brain.jpg)
+
+
+
+
+
+
+## 1.Présentation du formateur
 
 <div class="prez">
 Damien belvèze, Service Commun de Documentation, Université de Rennes
+<img src="images/jorgi.jpg" alt="jorgi, un personnage de Papers, please" width="100px">
 </div>
-
-
-## 1.1 Présentation du formateur
 
 <div class="prez">
 
@@ -608,6 +617,19 @@ Ferment d'injustices sociales, la concentration de ce travail sur des population
 
 </div>
 
+## 3.5 une petite question avant de continuer ? 
+
+Comment se définit la longueur de la réponse qui va être apportée par l'outil d'IA générative ?
+
+
+[[ ]] en nombre de vecteurs
+[[x]] en nombre de tokens
+[[ ]] en nombre de caractères
+[[ ]] en nombre de lignes 
+[[ ]] en degrés de température
+<script> alert("@input") </script>
+
+
 # 4. Comparer les modèles de langage entre eux
 
 ## Avec ComparIA
@@ -678,80 +700,67 @@ make a diagramme of this kind to represent how a RAG (retrieve augmented generat
 ## Pourquoi l'expérience RAGaRenn
 
 <div class="prez">
-
+                        {{1}}
 - intérêt du RAG pour une meilleure fiabilité des résultats <br>
+
+                        {{2}}
 - acculturer les personnels de l'Université <br>
+
+                        {{3}}
 - Avoir une base et un outil commun pour réfléchir aux usages à promouvoir et ceux à déconseiller <br>
+
+                        {{4}}
 - offrir un cadre sûr aux expérimentateurs (communautés bienveillante, conservation des données soumise au minimum technique et juridique, tiers de confiance pour l'hébergement) <br>
+
+                        {{5}}
 - contrôle du coût et de l'empreinte énérgétique <br>
 
 </div>
 
+                        {{6}}
 Maîtrise des coûts : communication du VP Numérique Olivier Wong-Kee-Ham le 12 juin 2024 à l'Université de Rennes
-
 ![](images/cout_IA.png)
 
-# 3.5 une petite question avant de continuer ? 
 
-Comment se définit la longueur de la réponse qui va être apportée par l'outil d'IA générative ?
-
-
-[[ ]] en nombre de vecteurs
-[[x]] en nombre de tokens
-[[ ]] en nombre de caractères
-[[ ]] en nombre de lignes 
-[[ ]] en degrés de température
-<script> alert("@input") </script>
 
 # 5. approches pédagogiques
 
-
-
-![](images/logiquiz2.png)
+<div class="prez">
+                                {{0}}
 Utilisez un chatbot pour lui demander de faire un QCM sur un sujet de votre choix. Faites en sorte que sa réponse prenne la forme suivante de sorte qu'on n'ait plus qu'à la coller dans l'activité Question Set de Logiquiz.
+        ![](images/logiquiz2.png)
 
                                 {{1}}
-Pour être réalisé, l'exercice nécessite  donc que le logiciel logiquiz soit
-téléchargé sur l'ordinateur.
+Pour être réalisé, l'exercice nécessite  donc que le logiciel logiquiz soit téléchargé sur l'ordinateur.
 Si ce n'est pas le cas, vous pouvez le télécharger sur Windows en suivant les instructions suivantes : 
-1.  Aller sur [le site de la Digitale](https://ladigitale.dev/logiquiz/#telecharger  )
-2.  télécharger l'archive zip sur le Bureau de votre ordinateur  
-3.  Dézippez l'archive (clic droit sur l'archive \> extraire les fichiers)  
-4.  Pour exécuter le logiciel, suivez le chemin suivant dans l'arborescence : logiquiz-1.0.9_windows \> Logiquiz \> logiquiz.exe  
-5.  Si le logiciel vous demande de modifier le parefeu, cliquer sur "annuler" 
-<br>
-Vous êtes normalement en mesure à présent d'éditer des activités H5P.
+1.  Aller sur [le site de la Digitale](https://ladigitale.dev/logiquiz/#telecharger) <br>
+2.  télécharger l'archive zip sur le Bureau de votre ordinateur  <br>
+3.  Dézippez l'archive (clic droit sur l'archive -> extraire les fichiers)  <br>
+4.  Pour exécuter le logiciel, suivez le chemin suivant dans l'arborescence : logiquiz-1.0.9_windows -> Logiquiz -> logiquiz.exe  <br>
+5.  Si le logiciel vous demande de modifier le parefeu, cliquer sur "annuler" <br>
+A présent, vous êtes normalement en mesure d'éditer des activités H5P.
+
 
                                 {{2}}
-Suivez à présent les instructions de formatage ci-dessous :
-```text Formatage Logiquiz
+Suivez maintenant les instructions de formatage ci-dessous :<br>
+        1. Dans Logiquiz, sélectionner l'activité "Question Set". <br>
+        2. Entrez un titre (peu importe lequel) <br>
+        3. Ouvrez le menu "texte" <br>
+        4. Inspirez-vous de la syntaxe utilisée par le mode texte de h5p pour formater votre prompt : <br>
+                **what number is pi? <br>
+                **\*3.14:::Archimède a été le premier à calculer la valeur de pi** <br>
+                **9.82:pi is the equivalent of 22/7** <br>
+                **5.45:::5.45 is too big** <br>
+                **6.56** <br>
+        - passer une ligne entre chaque question <br>
+        - chaque bonne réponse est précédée d'une étoile <br>
+        - une aide est précédé de : <br>
+        - un feedback est précédé de ::: <br>
+        (demandez au chatbot s'il peut générer des aides et des feedbacks pour chaque question.) <br>
+        Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
 
-1. Dans Logiquiz, sélectionner l'activité "Question Set". 
-2. Entrez un titre (peu importe lequel)
-3. Ouvrez le menu "texte"
-4. Inspirez-vous de la syntaxe utilisée par le mode texte de h5p pour formater votre prompt : 
-
-        what number is pi?
-        *3.14:::Archimedes was the first to use an algorithm in order to approximate the value of pi
-        9.82:pi is the equivalent of 22/7
-        5.45:::5.45 is too big
-        6.56
-
-- passer une ligne entre chaque question
-- chaque bonne réponse est précédée d'une étoile
-- une aide est précédé de :
-- un feedback est précédé de ::: 
-(demandez au chatbot s'il peut générer des aides et des feedbacks pour chaque question.)
-
-Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
-
-```
-
-
-## 5.1 Testez, discutez, commentez, améliorez les propositions d'activités suivantes :
-
-critères : 
-
+                                {{3}}
+**critères :** 
 - l'activité permet-elle d'atteindre l'objectif pédagogique ?
 - l'activité sera t-elle encore efficace dans quelques mois ?
 - l'activité est t-elle simple à mettre en place ? 
@@ -759,8 +768,19 @@ critères :
 - les outils choisis pour l'activité sont-ils représentatifs ? 
 - les contenus choisis sont-ils intéressants, pertinents ?  
 - l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ?
+</div>
+
+## 5.1 Biais linguistiques ⭐
+
+**Ojectif pédagogique : détecter le biais de genre dans les IA**
+
+![](images/biais_IA.png)
+
+Traduire she is a doctor / he is a nurse en français, puis de nouveau du français vers l'anglais : obtenez-vous une réponse fidèle à la première version ? 
 
 ## 5.2 reconnaissance d'images générées par IA (ou pas) ⭐
+
+**Objectif pédagogique : évaluation de l'information = discerner les images générées avec une IA de celles qui ont été générées sans recours à l'IA**
 
 <iframe width="1000" height="700" src="https://damienbelveze.github.io/CFCB_IA/reconnaissance_image.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>
 
@@ -770,6 +790,8 @@ activité réalisée par Lenaick Denis, SCD Université de Rennes
 
 
 ## 5.3 Mesure des biais à partir de la génération d'images ⭐⭐
+
+**Objectif pédagogique : mesurer les stéréotypes reproduits par les IAG, faire prendre conscience aux étudiants de l'existence de ces stéréotypes dans les IAG**
 
 Pour évaluer les biais de genre/ethniques des IAG, on peut générer 4 images sur [Fotor](https://www.fotor.com/fr/ai-image-generator/) :
 
@@ -795,7 +817,9 @@ Voici la procédure à suivre pour éviter de compromettre son adresse mail :
 ```
 ## 5.4 créer un quiz à partir d'un texte long ⭐⭐⭐
 
+
                                 {{0}}
+**Objectif pédagogique : montrer aux étudiants comment ils peuvent faire concevoir à l'IA des questions pour eux-mêmes ou leurs pairs à partir de textes longs afin de s'entraîner**
 ![](images/data_good_ai.png)
 Le but de l'exercice va consister à générer un H5P à partir d'un texte en reprenant la méthode apprise ci-dessus. 
 On va  créer une série de questions à choix multiple à partir d'un [article sur l'impact environnemental des IA](data_for_good_environnement.pdf)
@@ -808,13 +832,11 @@ obtenus ne seront sans doute pas de qualité professionnelle : à vous
 d'apporter votre savoir-faire pédagogique.
 
                                 {{1}}
-
 Dans l'interface du chatbot que vous avez choisi d'utiliser, utilisez le signe "+" pour charger le document et faire en sorte qu'il soit traité par le chatbot en même temps que votre prompt.
 **Astuce pour RAGaRenn** : le document a déjà été chargé dans le RAG, si vous avez du mal à le faire lire et traiter par le chatbot, entrer un # puis taper 'collection' et sélectionnez le fichier de l'exercice.
 ![](images/RAGaRenn_environnement.png)
 
                                 {{2}}
-
 Vous devez obtenir :
 un résumé de 10 lignes sous forme de texte à trous. une série de 3 questions à choix multiples comportant chacune 4 options.
 Etes-vous satisfait.e de ce que vous avez obtenu ?
@@ -828,6 +850,8 @@ Plus d'info sur cette activité [disponible en ligne](https://damienbelveze.gith
 
 
 ## 5.5 faire écrire un mini récit dont vous êtes le héros par une IA ⭐⭐⭐
+
+**Objectif pédagogique : faire mesurer aux étudiants les capacités de créativité des IAG et donner des éléments de formatage pour améliorer le résultat généré par l'IAG**
 
 ![](images/vampire.jpg)
 
@@ -882,24 +906,27 @@ Tentez d'avoir davantage d'alternatives dans l'histoire et quelques descriptions
 
 ## 5.6 Les LLM spécialisés dans le code ⭐⭐⭐⭐
 
+![](images/debug.jpg)
+
+**Objectif pédagogique : montrer aux étudiants ce qu'ils peuvent attendre des IAG en matière de génération de code**
+
 Les IAG sont fréquemment utilisées pour générer du code source. Elles ne
 sont pas toutes faites pour cela, et on peut mesurer de grandes
 différences en terme d'exactitude d'un résultat à un autre. Parfois le
 code livré fonctionne, parfois non. 
-Certains LLM entraînés spécifiquement sur du code source ouvert comme stardcoder2 ou codeqwen
-sont plus efficaces a priori. Mais tout dépend des corpus sur lesquelsces LLM ont été entraînés. 
-Certains langages de programmation sont mieux
-représentés que d'autres dans ces corpus, tout simplement parce qu'il
-sont plus populaires, c'est le cas par exemple de Python et Javascrit.
+Certains LLM entraînés spécifiquement sur du code source ouvert comme **Stardcoder2**, **Deepseck** ou **Codeqwen**
+Ces LLM sont réputés plus efficaces pour générer du code source. 
+Mais tout dépend des corpus sur lesquels ces LLM ont été entraînés. 
+Certains langages de programmation sont mieux représentés que d'autres dans ces corpus, tout simplement parce qu'il sont plus populaires, c'est le cas par exemple de Python et Javascript.
+Le langage de requête SPARQL que nous allons utiliser dans cet exercice fait partie des 96 langages informatiques sur lesquels le modèle Codeqwen (disponible dans RAGaRenn) a été entraîné. 
 
-Nous allons tenter de générer du code qui peut être utile à des fins de
-recherche et dont on pourra se rendre compte de l'efficacité sans avoir
-à télécharger quoique ce soit sur notre machine.
+Nous allons tenter de générer du code qui peut être utile à des fins de recherche et dont on pourra se rendre compte de l'efficacité sans avoir à télécharger quoique ce soit sur notre machine.
 
-Ce code sera précisément une requête en SPARQL pour interroger les
-données de Wikidata.
+Ce code sera précisément une requête en SPARQL pour interroger les données de Wikidata.
 
-### A propos de Sparql
+### A propos de SPARQL
+
+![](images/sparql.jpg)
 
 SPARQL est le langage de requête qu'on utilise pour extraire de Wikidata
 les listes d'éléments que contient la base. Wikidata étant la liste
@@ -957,6 +984,8 @@ fonctionnent dans le [service de requête de Wikidata](https://query.wikidata.or
 Quel est votre avis sur les performances de ces IAG pour générer des requêtes SPARQL ?
 
 ## 5.7 des outils plus ou moins énergivores ⭐
+
+**Objectif pédagogique : faire prendre conscience aux étudiants du caractère très énergivore des IA génératives, par rapport aux autres IA**
 
 quel ordre de grandeur dans la consommation d'énergie selon les différentes catégories d'IA? 
 
