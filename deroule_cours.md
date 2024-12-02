@@ -94,7 +94,7 @@ Damien belvèze, Service Commun de Documentation, Université de Rennes
 
 - biais anticapitaliste et environnementaliste
 
-        <span class="blue">Les IAG se développent principalement aux USA, en Europe et en Chine, laissant les autres pays loin derrière. Elles agrandissent la fracture Nord / Sud. Elles sont promues par des entreprises capitalistes qui n'ont aucun souci de leur empreinte carbone. Le développement des IAG accroît la dette carbone de notre planête de manière drastique </span>
+        <span class="blue">Les IAG se développent principalement aux USA, en Europe et en Chine, laissant les autres pays loin derrière. Elles agrandissent la fracture Nord / Sud. Elles sont promues par des entreprises capitalistes qui n'ont aucun souci de leur empreinte carbone, ni des conséquences des extractions et captations de ressources que ces outils engendrent. Le développement des IAG accroît la dette carbone de notre planête de manière drastique </span>
 
 </div>
 
@@ -110,7 +110,6 @@ votre établissement a t-il une politique ou une charte en matière d'usage des 
 
                     {{1}}
 A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 1 = Je n'en ai pas entendu parler 5 = Je saurais expliquer en quoi cela consiste à un.e étudiant.e
-
 **Grand Modèle de Langage (LLM)**
 ![](charts/question2.png)
 **Vectorisation**
@@ -118,8 +117,8 @@ A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 
 **tokenisation**
 ![](charts/question4.png)
 **entraînement et inférences**
-![](charts/question5.png
-**RAG, retrieve augmented generation**
+![](charts/question5.png)
+**RAG, retrieval augmented generation**
 ![](charts/question6.png)
 **Open Source**
 ![](charts/question7.png)
@@ -127,7 +126,7 @@ A quel point les notions ci-dessous vous sont familières : valeurs de 1 à 5 : 
 ![](charts/question8.png)
 
                         {{2}}
-Assurez-vous des formations auprès des étudiants dans votre établissement
+Assurez-vous des formations auprès des étudiants dans votre établissement ?
 ![](charts/question9.png)
 
                         {{3}}
@@ -171,8 +170,6 @@ J'aimerais connaitre les limites de l'IA par rapport à sa pertinence en matièr
 <div class="prez">
 
                 {{0}}
-Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées du Supérieur)
-
 ```bibtex @cite
 @book{massiasEtude2024LImpact2024,
         title = {Etude 2024 : L'Impact Des IA Génératives Sur Les Etudiants},
@@ -181,25 +178,23 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
         url = {https://open.devinci.fr/ressource/etude-2024-impact-ia-generatives-etudiants/}
 }
 ```
-
-        - usage régulier : 92%  
-        - usage quotidien : 30%  
-        - **usage d'outils payants (GPT4) : 30%**  
+Etude auprès de <div class="blue">1600 étudiants du Pôle Léonard de Vinci</div> (3 écoles privées du Supérieur) <br>
+- usage régulier : 92%  <br>
+- usage quotidien : 30%  <br>
+- **usage d'outils payants (GPT4) : 30%**  
 
                 {{1}}
-        - 52% constatent que ChatGPT les influence dans leurs choix  
-        - 66% des répondants sont sensibles au fait que ChatGPT charrie des références culturelles et des biais nord-américains  
-        - 59% constatent que ChatGPT fait des erreurs  
-
-        - 65% estiment que le fait que l'employeur mette à disposition des IAG aux employés fait partie de leurs critères de choix pour leur futur emploi 
+- 52% constatent que ChatGPT les influence dans leurs choix  <br>
+- 66% des répondants sont sensibles au fait que ChatGPT charrie des références culturelles et des biais nord-américains  <br>
+- 59% constatent que ChatGPT fait des erreurs  <br>
+- 65% estiment que le fait que l'employeur mette à disposition des IAG aux employés fait partie de leurs critères de choix pour leur futur emploi <br>
 
                 {{2}}
-        - 49% des étudiants considèrent que les IAG peuvent constituer un risque pour la démocratie
-
-        - <div class="blue">51% des étudiants admettent qu'ils ont du mal à se passer de ChatGPT</div>
+- 49% des étudiants considèrent que les IAG peuvent constituer un risque pour la démocratie <br>
+- <div class="blue">51% des étudiants admettent qu'ils ont du mal à se passer de ChatGPT</div>
 
                 {{3}}
-        L'échantillon n'est peut-être pas représentatif : certaines disciplines, une certaine aisance des étudiants qui ont pu faire le choix d'écoles privées coûteuses.
+L'échantillon n'est peut-être pas représentatif : certaines disciplines, une certaine aisance des étudiants qui ont pu faire le choix d'écoles privées coûteuses.
 
 </div>
 
@@ -208,7 +203,6 @@ Etude auprès de 1600 étudiants du Pôle Léonard de Vinci (3 écoles privées 
 <div class="prez">
 
                 {{0}}
-
 Résultats présentés par Zhuoran Ma, Gresec, à la 9ème conférence Doc&Soc de septembre 2024 à Grenoble.
 
 ```bibtex @cite
@@ -247,17 +241,16 @@ Arguments apportés par les non utilisateurs : <br>
 - 52% faible confiance dans les résultats  <br>
 - 20% difficulté à maîtriser les outils  <br>
 - 16% interdiction explicite de l'enseignant.e ou de l'établissement <br> 
-
 Utilisation écrasante des générateurs de textes et parmi ceux-ci de ChatGPT
 
 
                 {{4}}
 
 Principaux usages et bénéfices rapportés : <br>
-- Aide à écrire du code informatique  <br>
-- Pour les non-francophones, améliorer le français, aide à rédiger en anglais  <br>
-- Permet de mieux comprendre un sujet <br>  
-- Permet de trouver de l'inspiration sur un thème particulier <br>  
+- Aide à écrire du <span class="blue">code informatique</span>  <br>
+- Pour les non-francophones, <span class="blue">améliorer le français</span>, aide à rédiger en anglais  <br>
+- Permet de <span class="blue">mieux comprendre un sujet</span> <br>  
+- Permet de <span class="blue">trouver de l'inspiration</span> sur un thème particulier <br>  
 
            
                  {{5}}
@@ -355,7 +348,7 @@ d'une certaine manière on pourrait découper la phrase de cette manière
 |:--|:--|:--|:--|:--|:--|:--|:--|
 | longtemps | je | me | suis | couché | de | bonne | heure |
 
-Mais "de" ne constitue pas une unité de sens, c'est plutôt "de bonnee heure" qui a une signification particulière dans la phrase. 
+Mais "de" ne constitue pas une unité de sens, c'est plutôt "de bonne heure" qui a une signification particulière dans la phrase. 
 Pour autant "de bonne heure" est constitué de deux termes qui peuvent être utilisés dans d'autres textes de manière différente : "heure" et "bonne". <br>
 - une *bonne* pâtisserie  <br>
 - c'est l'*heure* de se réveiller  <br>
@@ -396,7 +389,7 @@ les mots Windows et banana sont distants l'un de l'autre dans un grand nombre de
 
 Pour passer d'un mot à un autre, le LLM est formé à faire des substitutions : 
 <br><br>
-royauté + homme = roi 
+royauté + homme = roi <br>
 roi - homme + femme = reine
 </div>
 
@@ -522,7 +515,7 @@ Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves :
 
 > Qu'adviendra t-il si nous répondons mal à des requêtes comme "amour" et "ouragan"  
 
-> Qu'advient-il lorsque ChatGPT répond à une personne qui lui soumet ses symptomes que sa meilleure option est de se suicider ?
+> Qu'advient-il lorsque ChatGPT répond à une personne qui lui soumet ses symptômes que sa meilleure option est de se suicider ?
 ```bibtex @cite
 @book{ertzscheidIALassautCyberespace2024,
         title = {Les IA à l'assaut Du Cyberespace},
@@ -541,8 +534,9 @@ Question d'Apostolos Gerasoulis à propos du moteur de recherche Ask Jeeves :
 
                                 {{1}}
 
-        Le renforcement se fait avec des humains. Il a pour but d'orienter les réponses du chatbot pour les rendre socialement acceptables et de supprimer autant que possible les réponses inacceptables (cf. ci-dessus) 
-        Une autre visée de ce travail est d'essayer de corriger les biais qui sont présents soit dans le corpus de données d'entraînement (par exemples échanges sur un réseau social), soit dans les règles ou le code qui permet d'entraîner l'IA à partir de ce corpus. Ces règles en effet émanent d'une population assez homogène qui a ses propres biais (ingénieurs mâles, blancs, issus de classes sociales favorisées (classe managériale) et du continent Nord-Américain). 
+        Le renforcement se fait avec des humains. Il a pour but d'orienter les réponses du chatbot pour les rendre socialement acceptables et de supprimer autant que possible les réponses inacceptables (cf. ci-dessus) <br>
+        Une autre visée de ce travail est d'essayer de corriger les biais qui sont présents soit dans le corpus de données d'entraînement (par exemples échanges sur un réseau social), soit dans les règles ou le code qui permet d'entraîner l'IA à partir de ce corpus. <br>
+        Ces règles en effet émanent d'une population assez homogène qui a ses propres biais (ingénieurs mâles, blancs, issus de classes sociales favorisées (classe managériale) et du continent Nord-Américain). 
 ```bibtex @cite
 @misc{latitudesPourIAMoins2024,
   title = {Pour Une IA Moins Biaisée},
@@ -631,6 +625,8 @@ Comment se définit la longueur de la réponse qui va être apportée par l'outi
 
 
 # 4. Comparer les modèles de langage entre eux
+
+<a href="https://artificialanalysis.ai/" alt="tableau de comparaison des LLM sur le site https://artificialanalizis.ai"><img src="images/modeles.png"></img></a>
 
 ## Avec ComparIA
 
@@ -760,14 +756,14 @@ Suivez maintenant les instructions de formatage ci-dessous :<br>
         Si cela ne fonctionne pas bien avec un chatbot, essayez avec un autre, ou avec un même chatbot (poe.com / RAGaRenn), variez les modèles à utiliser.
 
                                 {{3}}
-**critères :** 
-- l'activité permet-elle d'atteindre l'objectif pédagogique ?
-- l'activité sera t-elle encore efficace dans quelques mois ?
-- l'activité est t-elle simple à mettre en place ? 
-- les outils choisis pour l'activité sont-ils simples à utiliser ? 
-- les outils choisis pour l'activité sont-ils représentatifs ? 
-- les contenus choisis sont-ils intéressants, pertinents ?  
-- l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ?
+**critères :** <br>
+- l'activité permet-elle d'atteindre l'objectif pédagogique ? <br>
+- l'activité sera t-elle encore efficace dans quelques mois ? <br>
+- l'activité est t-elle simple à mettre en place ? <br>
+- les outils choisis pour l'activité sont-ils simples à utiliser ? <br>
+- les outils choisis pour l'activité sont-ils représentatifs ? <br>
+- les contenus choisis sont-ils intéressants, pertinents ?  <br>
+- l'activité met-elle en jeu les données personnelles de l'utilisateur / utilisatrice ? <br>
 </div>
 
 ## 5.1 Biais linguistiques ⭐
@@ -1056,9 +1052,11 @@ Seul.e un.e membre du groupe reste sur place. Les autres vont au groupe suivant.
 board réalisé avec Klaxoon. Chaque groupe de 5 personnes se voit attribuer une zone du board. Ces personnes répartissent les icones en bas de la zone autour des 5 verbes centraux. 
 Il est possible d'enrichir le tout avec des post-its pour noter ces idées. Possible aussi à un membre de l'équipe de répondre au post-it d'une autre.
 
+## 6.3 bibliothèque Zotero
 
+Besoin d'inspiration pour faire cette activité ? Voici quelques [liens utiles](https://www.zotero.org/groups/5574652/cfcb_ai/tags/IA%20et%20environnement/library) (également référencés dans la biblio du cours).
 
-# 7 Quel positionnement pour les bibliothécaires / formateurs ?
+# 7. Quel positionnement pour les bibliothécaires / formateurs ?
 
 [Ouvrir le sondage](https://go.klaxoon.com/9RK78VF)
 
@@ -1147,5 +1145,7 @@ En revanche pour l'OSI (Open Source Initiative), dans la mesure où Meta non seu
 
 
 # Bibliographie
+
+[groupe Zotero](https://www.zotero.org/groups/5574652/cfcb_ai)
 
 @[bibliography.link.style(vancouver)](./biblio.bib)
